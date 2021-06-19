@@ -1,0 +1,378 @@
+{% extends './base.html' %}
+{% load static %}
+<title>{% block title %} vVouch {% endblock %}</title>
+{% block pagecontent %}
+<body class="home">
+
+    <section id="fh5co-about" class="experts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="padding-bottom: 50px;">
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-plus"></i>Categoria</button>
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#subModal"><i class="fas fa-plus"></i>Subcategoría</button>
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#archivoModal"><i class="fas fa-plus"></i>Archivo</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="divTable">
+                            <div class="divTableBody">
+                                <div class="divTableRow">
+                                    <div class="divTableCell cellHeader">S.N</div>
+                                    <div class="divTableCell cellHeader">Estructura</div>
+                                    <div class="divTableCell cellHeader">Acción</div>
+                                </div>
+                                {% for category in categories %}
+                                    <div class="divTableRow">
+                                        <div class="divTableCell">{{forloop.counter}}</div>
+                                        <div class="divTableCell bold-text">
+                                            {% if category.title %} {{category.title}} {% else %}-{% endif %}
+                                        </div>
+                                        <div class="divTableCell">
+                                            <a data-toggle="modal" class="editCategoryButton" data-target="#editModal" data-set="{{category.permissions}}">
+                                                <i class="icon to-animate-2 icon-edit bounceIn animated"></i>
+                                            </a>
+                                            <a style="color:#ff0500;" class="delete-category" href="javascript:void(0);" category-name="{{category.title}}">
+                                                <i class="icon to-animate-2 icon-trash bounceIn animated"></i> </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    {% for subcategory in category.subcategories %}
+                                        <div class="divTableRow">
+                                            <div class="divTableCell padding-left">
+
+                                            </div>
+                                            <div class="divTableCell padding-left font-text600">
+                                                        {% if subcategory.title %} {{subcategory.title}} {% else %}-{% endif %}
+                                            </div>
+                                            <div class="divTableCell">
+                                                <a data-toggle="modal" class="editSubCategoryButton" data-target="#editSubModal" data-set="{{category.title}}">
+                                                    <i class="icon to-animate-2 icon-edit bounceIn animated"></i>
+                                                </a>
+                                                <a style="color:#ff0500;" class="delete-subcategory" href="javascript:void(0);" category-name="{{category.title}}" subcategory-name="{{subcategory.title}}">
+                                                    <i class="icon to-animate-2 icon-trash bounceIn animated"></i> </i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        {% for file in subcategory.files %}
+                                            <div class="divTableRow">
+                                                <div class="divTableCell padding-left100">
+
+                                                </div>
+                                                <div class="divTableCell padding-left100 sub-files-name">
+                                                            {% if file.file %} {{file.file}} {% else %}-{% endif %}
+                                                </div>
+                                                <div class="divTableCell">
+                                                    <a data-toggle="modal" class="editFilesButton" data-target="#editFilesModal" data="{{category.title}}" data-set="{{subcategory.title}}"> <i class="icon to-animate-2 icon-edit bounceIn animated"></i> </a>
+                                                    <a style="color:#ff0500;" class="delete-subcategory-files" href="javascript:void(0);" category-name="{{category.title}}" sub-category-name="{{subcategory.title}}" subcategory_file_name="{{file.file}}">
+                                                        <i class="icon to-animate-2 icon-trash bounceIn animated"></i> </i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        {% endfor %}
+                                    {% endfor %}
+                                    {% for file in category.files %}
+                                        <div class="divTableRow">
+                                            <div class="divTableCell">
+                                            </div>
+                                            <div class="divTableCell cat-files-name">
+                                                        {% if file.file %} {{file.file}} {% else %}-{% endif %}
+                                            </div>
+                                            <div class="divTableCell">
+                                                <a data-toggle="modal" class="editCatFilesModal" data-target="#editCatFilesModal" data-set="{{category.title}}"> <i class="icon to-animate-2 icon-edit bounceIn animated"></i> </a>
+                                                <a style="color:#ff0500;" class="delete-category-files" href="javascript:void(0);" category-name="{{category.title}}" category_file_name="{{file.file}}">
+                                                    <i class="icon to-animate-2 icon-trash bounceIn animated"></i> </i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Añadir Categoria</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="category-name" class="col-form-label">Nombre subcategoría:</label>
+                <input type="text" class="form-control" id="category-name" placeholder="Introduzca el nombre de la categoría...">
+              </div>
+              <div class="form-group">
+                <label class="col-form-label">Permisos:</label>
+                    <select class="permission-select form-control select2 select2-hidden-accessible"
+                            multiple=""
+                            data-placeholder="Selecciona los permisos"
+                            style="width: 100%;"
+                            aria-hidden="true"
+                            name="permissions[]">
+                    </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary create-category">Crear Categoria</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="subModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="subModalLabel">Añadir subcategoría</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="category-name" class="col-form-label">Nombre subcategoría:</label>
+                <input type="text" class="form-control" id="subcategory-name" placeholder="Introduzca el nombre de la subcategoría..">
+              </div>
+              <div class="form-group">
+                <label class="col-form-label">Categoria:</label>
+                    <select class="category-select form-control select2 select2-hidden-accessible"
+                            data-placeholder="Selecciona Categoria"
+                            style="width: 100%;"
+                            aria-hidden="true"
+                            name="category">
+                        <option value="">Selecciona Categoria</option>
+                        {% for category in finalCategory %}
+                            <option value="{{category.category_title}}">{% if category.category_title %} {{category.category_title}} {% else %}-{% endif %}</option>
+                        {%endfor%}
+                    </select>
+              </div>
+
+                <div class="form-group">
+                <label class="col-form-label">Permisos:</label>
+                    <select class="subCategory-permission-select form-control select2 select2-hidden-accessible"
+                            multiple=""
+                            data-placeholder="Selecciona los permisos"
+                            style="width: 100%;"
+                            aria-hidden="true"
+                            name="permissions[]">
+                    </select>
+              </div>
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary create-subcategory">Crear Subcategoria</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="archivoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="archivoModalLabel">Añadir archivo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="archivo-form" enctype="multipart/form-data" method="post">
+                <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+              <div class="form-group">
+                <label class="col-form-label">Categoria:</label>
+                    <select class="archivo-category-select form-control select2 select2-hidden-accessible"
+                            data-placeholder="Selecciona Categoria"
+                            style="width: 100%;"
+                            aria-hidden="true"
+                            name="category">
+                        <option value="">Selecciona Categoria</option>
+                        {% for category in finalCategory %}
+                            <option value="{{category.category_title}}">{% if category.category_title %} {{category.category_title}} {% else %}-{% endif %}</option>
+                        {%endfor%}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="col-form-label">Subcategoría:</label>
+                    <select class="archivo-subcategory-select form-control select2 select2-hidden-accessible"
+                            data-placeholder="Seleccione una subcategoría"
+                            style="width: 100%;"
+                            aria-hidden="true"
+                            name="subcategory">
+                    </select>
+              </div>
+                <div class="form-group">
+                    <label for="cat-sub-files" class="form-label">Subir varios archivos</label>
+                    <input class="form-control" type="file" name="files" id="cat-sub-files" multiple />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="submit" name="submit" value="submit" class="btn btn-primary create-archivo">Crear</button>
+                  </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editModalLabel">Editar Categoria</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="category-name" class="col-form-label">Nombre subcategoría:</label>
+                <input type="hidden" id="old-category-name" value="">
+                <input type="text" class="form-control" id="edit-category-name" placeholder="Introduzca el nombre de la subcategoría....">
+              </div>
+              <div class="form-group">
+                <label class="col-form-label">Permisos:</label>
+                    <select class="edit-permission-select form-control select2 select2-hidden-accessible"
+                            multiple=""
+                            data-placeholder="Selecciona los permisos"
+                            style="width: 100%;"
+                            aria-hidden="true"
+                            name="permissions[]">
+                    </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary edit-create-category">Editar Categoria</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="editSubModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="editSubModalLabel">Editar Subcategorio</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="category-name" class="col-form-label">Nombre subcategoría:</label>
+                      <input type="hidden" id="old-subcategory-name" value="">
+                    <input type="text" class="form-control" id="edit-subcategory-name" placeholder="Type subcategory name...">
+                  </div>
+                  <div class="form-group">
+                    <label class="col-form-label">Categoria:</label>
+                        <input type="hidden" id="old-category-select" value="">
+                        <select id="subCat_Edit" class="edit-category-select form-control select2 select2-hidden-accessible"
+                                data-placeholder="Selecciona categorio"
+                                style="width: 100%;"
+                                aria-hidden="true"
+                                name="category">
+                            <option value="">Seleccione Categoria</option>
+                            {% for category in finalCategory %}
+                                <option value="{{category.category_title}}">{% if category.category_title %} {{category.category_title}} {% else %}-{% endif %}</option>
+                            {%endfor%}
+                        </select>
+                  </div>
+
+                  <div class="form-group">
+                   <label class="col-form-label">Permisos:</label>
+                    <select class="edit-sub-permission-select form-control select2 select2-hidden-accessible"
+                            multiple=""
+                            data-placeholder="Selecciona los permisos"
+                            style="width: 100%;"
+                            aria-hidden="true"
+                            name="permissions[]">
+                    </select>
+                </div>
+
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" id="editCategory" class="btn btn-primary edit-subcategory">Editar Subcategoria</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    <div class="modal fade" id="editFilesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editFilesModalLabel">Editar Archivo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="editFiles-form" enctype="multipart/form-data" method="post">
+                <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+                <input type="hidden" name="subcategory" class="subcategory_title" value="">
+                <input type="hidden" name="category" class="category_title" value="">
+                <input type="hidden" name="old_file" class="old_file" value="">
+              <div class="form-group">
+                <div class="form-group">
+                    <label for="cat-sub-files" class="form-label">Subir varios archivos</label>
+                    <input class="form-control" type="file" name="files" id="edit-cat-sub-files" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="submit" name="submit" value="submit" class="btn btn-primary create-archivo">Crear</button>
+                  </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="editCatFilesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editCatFilesModalLabel">Editar Archivo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="editCatFiles-form" enctype="multipart/form-data" method="post">
+                <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+                <input type="hidden" name="categoryfiles" class="categoryfiles" value="">
+                <input type="hidden" name="old_cat_file" class="old_cat_file" value="">
+              <div class="form-group">
+                <div class="form-group">
+                    <label for="cat-sub-files" class="form-label">Subir varios archivos</label>
+                    <input class="form-control" type="file" name="files" id="cat-files" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="submit" name="submit" value="submit" class="btn btn-primary create-archivo">Crear</button>
+                  </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+<input type="hidden" class="csrfToken" value="{{csrf_token}}">
+</body>
+{% endblock %}

@@ -1,0 +1,72 @@
+{
+    "categories": [
+        {
+            "title": "Categoria no_socio2",
+            "permissions": [
+                "no_socio"
+            ],
+            "subcategories": [
+                {
+                    "title": "a",
+                    "permissions": [
+                        "no_socio"
+                    ],
+                    "files": [
+                        {
+                            "title": "2019_MANUAL_B\u00c1SICO_de_RESCATE_en_ACCIDENTES_de_TR\u00c1FICO_#DGT_#APRAT",
+                            "file": "2019_MANUAL_B\u00c1SICO_de_RESCATE_en_ACCIDENTES_de_TR\u00c1FICO_#DGT_#APRAT.pdf"
+                        },
+                        {
+                            "title": "50_temas_juridicos_imprescindibles",
+                            "file": "50_temas_juridicos_imprescindibles.pdf"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Categoria socio",
+            "permissions": [
+                "socio"
+            ],
+            "subcategories": [
+                {
+                    "title": "Imagenes Paisaje",
+                    "permissions": [
+                        "socio"
+                    ],
+                    "files": [
+                        {
+                            "title": "3",
+                            "file": "3.jpg"
+                        },
+                        {
+                            "title": "2",
+                            "file": "2.jpg"
+                        },
+                        {
+                            "title": "1",
+                            "file": "1.jpg"
+                        }
+                    ]
+                },
+                {
+                    "title": "Categoria ej",
+                    "permissions": [
+                        "socio"
+                    ],
+                    "files": [
+                        {
+                            "title": "FF_UPW_Magna_Solutions_LO_high",
+                            "file": "FF_UPW_Magna_Solutions_LO_high.png"
+                        },
+                        {
+                            "title": "test123",
+                            "file": "test123.JPG"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

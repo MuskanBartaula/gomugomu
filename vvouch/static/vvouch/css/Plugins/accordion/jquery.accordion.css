@@ -1,0 +1,88 @@
+/*!
+ * jQuery Accordion 0.0.1
+ * (c) 2014 Victor Fernandez <victor@vctrfrnndz.com>
+ * MIT Licensed.
+ */
+
+
+/* Requirements */
+
+[data-accordion] [data-content] {
+    overflow: hidden;
+    max-height: 0;
+}
+
+
+/* Basic Theme */
+
+[data-accordion] {
+    line-height: 1;
+}
+
+[data-control],
+[data-content]>* {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    padding: 10px;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #232222;
+    /* border: 2px solid #f2f2f2; */
+}
+
+[data-control] {
+    color: #000;
+    font-weight: 400;
+    background: #fcefda;
+}
+
+[data-content] [data-accordion] {
+    border: 0;
+    padding: 0;
+}
+
+[data-accordion] [data-control] {
+    position: relative;
+    padding-right: 40px;
+}
+
+[data-accordion]>[data-control]:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    font-size: 25px;
+    font-weight: 200;
+    color: #444;
+    height: 15px;
+    width: 24px;
+    background: url('../../../images/down.png') center center no-repeat;
+    background-size: 50%;
+}
+
+[data-accordion].open>[data-control]:after {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+
+/* 
+.accordion-icon::after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.open .accordion-icon::after {
+    content: "\2212";
+} */

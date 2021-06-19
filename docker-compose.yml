@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    ports:
+      - '3306:3306'
+    environment:
+       MYSQL_DATABASE: 'vvouch'
+       MYSQL_USER: 'root'
+       MYSQL_PASSWORD: '12345'
+       MYSQL_ROOT_PASSWORD: '12345'
+    volumes:
+      - /tmp/app/mysqld:/var/run/mysqld
+      - ./db:/var/lib/mysql
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/vvouch
+      - /tmp/app/mysqld:/var/run/mysqld
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
