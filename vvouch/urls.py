@@ -21,7 +21,9 @@ urlpatterns = [
     path('get-subcategory-permission', views.get_subcategory_permission, name='get-subcategory-permission'),
     path('get_edit_subcategory_permission', views.get_edit_subcategory_permission, name='get_edit_subcategory_permission'),
     path('edit_permissions_in_subcategories', views.edit_permissions_in_subcategories, name='edit_permissions_in_subcategories'),
-    path('data-json',views.data_json, name="data-json")
+    path('data-json',views.data_json, name="data-json"),
+
+    path('file/move/', views.handle_dragged_file, name="handle_dragged_file")
 ]
 
 urlpatterns += staticfiles_urlpatterns()

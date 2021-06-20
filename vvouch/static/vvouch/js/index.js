@@ -218,8 +218,12 @@ $(document).ready(function () {
                         cache: false,
                         contentType: false,
                         processData: false,
+                        beforeSend: function(xhr) {
+                            $('.create-archivo').attr('disabled', true).text('Loading...')
+                        },
                         success: function (data) {
                             console.log(data);
+                            $('.create-archivo').removeAttr('disabled').text('Crear')
                             if (data.success == 1) {
                                 swal("Éxito!", "Imágenes subidas con éxito!", "success")
                                     .then((value) => {
@@ -232,6 +236,7 @@ $(document).ready(function () {
                             }
                         },
                         error: function (data) {
+                            $('.create-archivo').removeAttr('disabled').text('Crear')
                             swal("Éxito!", "Imágenes subidas con éxito!", "success")
                                 .then((value) => {
                                     location.reload();
@@ -673,5 +678,36 @@ $(document).ready(function () {
                 });
                 }
             });
+    });
+});
+var category;
+    var subcategory;
+$( function() {
+    
+    $('.dragable').draggable({
+        revert: 'invalid'
+    })
+
+    $(".dropable").droppable({
+        drop: function(event,ui) {
+            category = $(this).attr('category')
+            subcategory = $(this).attr('subcategory')
+            filename = $(ui.draggable).attr('file_name')
+            
+            $.ajax({
+                url: '/file/move/',
+                method: 'POST',
+                data: {
+                    category: category,
+                    subcategory: subcategory,
+                    filename: filename,
+                    csrfmiddlewaretoken: $(".csrfToken").val(),
+                },
+                success: function(data) {
+                    location.reload()
+                }
+
+            })
+        },
     });
 });

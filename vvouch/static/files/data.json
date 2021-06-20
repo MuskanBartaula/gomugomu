@@ -13,16 +13,13 @@
                     ],
                     "files": [
                         {
-                            "title": "2019_MANUAL_B\u00c1SICO_de_RESCATE_en_ACCIDENTES_de_TR\u00c1FICO_#DGT_#APRAT",
-                            "file": "2019_MANUAL_B\u00c1SICO_de_RESCATE_en_ACCIDENTES_de_TR\u00c1FICO_#DGT_#APRAT.pdf"
-                        },
-                        {
-                            "title": "50_temas_juridicos_imprescindibles",
-                            "file": "50_temas_juridicos_imprescindibles.pdf"
+                            "title": "Formative_Evaluation-_Computer",
+                            "file": "Formative_Evaluation-_Computer.xlsx"
                         }
                     ]
                 }
-            ]
+            ],
+            "files": []
         },
         {
             "title": "Categoria socio",
@@ -65,6 +62,12 @@
                             "file": "test123.JPG"
                         }
                     ]
+                }
+            ],
+            "files": [
+                {
+                    "title": "test123",
+                    "file": "test123.JPG"
                 }
             ]
         }

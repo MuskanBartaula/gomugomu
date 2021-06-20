@@ -1,3 +1,4 @@
+from pathlib import Path
 import re
 import logging
 import os
@@ -89,6 +90,96 @@ def handle_uploaded_file(file, filename, request):
                 destination.write(chunk)
     path = settings.FILE_ROOT + '/data.json'
     write_archivo_json(request, path, filename)
+
+
+def handle_dragged_file(request):
+    category = request.POST.get('category')
+    subcategory = request.POST.get('subcategory')
+    filename = request.POST.get('filename')
+    json_path = settings.FILE_ROOT + '/data.json'
+    
+    if category: 
+        path = settings.CATEGORY_ROOT + "/" + category + "/"
+
+    elif subcategory:
+        path = settings.CATEGORY_ROOT + "/" + category + "/" + subcategory
+
+    for root, dirs, files in os.walk(path):
+        if filename in files:
+            current_path = os.path.join(root, filename)
+            delete_dragged_archivo_json(request, json_path, current_path, filename)
+            file_exists = Path(path)
+            if not file_exists:
+                shutil.move(current_path, path)
+    write_dragged_archivo_json(request, json_path, filename)
+    return JsonResponse({'message': 'Done'})
+
+def delete_dragged_archivo_json(new_data, filename, current_path, fileName):
+    
+    with open(filename, 'r+') as file:
+        file_data = json.load(file)
+        if 'category' in new_data.POST:
+            for categories in file_data['categories']:
+                parent_directory = os.path.basename(os.path.dirname(current_path))
+                parent_parent_directory = os.path.basename(os.path.dirname(os.path.dirname(current_path)))
+                if parent_parent_directory == "categories":
+                    if categories['title'] == parent_directory:
+                        if "files" in categories:
+                            categories['files'] = [f for f in categories['files'] if not (f['file'] == fileName)]
+                else:
+                    if categories['title'] == parent_parent_directory:
+                        if "files" in categories:
+                            categories['files'] = [f for f in categories['files'] if not (f['file'] == fileName)]
+                        # if "subcategories" in categories:
+                        #     for subcategories in categories['subcategories']:
+                        #         if subcategories['title'] == parent_directory:
+                        #             if "files" in subcategories:
+                        #                 subcategories['files'] = [f for f in subcategories['files'] if not (f['file'] == fileName)]
+                    
+        elif 'subcategory' in new_data.POST:
+            parent_directory = os.path.basename(os.path.dirname(current_path))
+            subcategory_parent_directory = os.path.basename(os.path.dirname(os.path.dirname(current_path)))
+            for categories in file_data['categories']:
+                    if categories['title'] == subcategory_parent_directory:
+                        if "subcategories" in categories:
+                            for subcategories in categories['subcategories']:
+                                if subcategories['title'] == parent_directory:
+                                    if "files" in subcategories:
+                                        subcategories['files'] = [f for f in subcategories['files'] if not (f['file'] == fileName)]
+
+        file.truncate(0)
+        file.seek(0)
+        json.dump(file_data, file, indent = 4)
+        file.close()
+
+def write_dragged_archivo_json(new_data, filename, fileName):
+    with open(filename, 'r+') as file:
+        file_data = json.load(file)
+        if 'category' in new_data.POST and 'subcategory' in new_data.POST:
+            for categories in file_data['categories']:
+                    if categories['title'] == new_data.POST['category']:
+                        if "subcategories" in categories:
+                            for subcategories in categories['subcategories']:
+                                if subcategories['title'] == new_data.POST['subcategory']:
+                                    if "files" in subcategories:
+                                        subcategories['files'].append({"title": "{}".format(fileName.split(".")[0]),"file": "{}".format(fileName)})
+                                    else:
+                                        subcategories.update({"files": []})
+                                        subcategories['files'].append({"title": "{}".format(fileName.split(".")[0]),"file": "{}".format(fileName)})
+            
+        elif 'category' in new_data.POST:
+            for categories in file_data['categories']:
+                if categories['title'] == new_data.POST['category']:
+                    if "files" in categories:
+                        categories['files'].append({"title": "{}".format(fileName.split(".")[0]), "file": "{}".format(fileName)})
+                    else:
+                        categories.update({"files": []})
+                        categories['files'].append({"title": "{}".format(fileName.split(".")[0]), "file": "{}".format(fileName)})
+        
+        file.truncate(0)
+        file.seek(0)
+        json.dump(file_data, file, indent = 4)
+        file.close()
 
 def write_archivo_json(new_data, filename, fileName):
     with open(filename, 'r+') as file:
@@ -280,6 +371,7 @@ def write_edit_subcategory_json(request, filename):
                 break
             elif categories['title'] == category_title and category_title != old_category_title and subcategory_title == old_subcategory_title:
                 print(file_data)
+
                 for nsubcate in file_data['categories'][count3 - 1]['subcategories']:
                     count4 += 1
                     if nsubcate['title'] == subcategory_title:
@@ -289,6 +381,7 @@ def write_edit_subcategory_json(request, filename):
                 break
             elif categories[
                 'title'] == category_title and category_title != old_category_title and subcategory_title != old_subcategory_title:
+
                 for nsubcate in file_data['categories'][count3 - 1]['subcategories']:
                     count4 += 1
                     file_data['categories'][count - 1]['subcategories'].append(nsubcate)
@@ -408,6 +501,27 @@ def edit_archivo_json(new_data, filename, fileName):
         json.dump(file_data, file, indent = 4)
         file.close()
 
+def edit_dragged_archivo_json(new_data, filename, fileName):
+    with open(filename, 'r+') as file:
+        file_data = json.load(file)
+        count=0
+        count2=0
+        if new_data.POST['categoryfiles']:
+                for categories in file_data['categories']:
+                    count += 1
+                    if new_data.POST['categoryfiles'] == categories['title']:
+                        if "files" in categories:
+                            for files in categories['files']:
+                                count2+1
+                                if files['file'] == new_data.POST['old_cat_file']:
+                                    file_data['categories'][count-1]['files'][count2+1]['title'] = fileName.split(".")[0]
+                                    file_data['categories'][count - 1]['files'][count2+1]['file'] = fileName
+                                    break
+
+        file.truncate(0)                            
+        file.seek(0)
+        json.dump(file_data, file, indent = 4)
+        file.close()
 
 
 

@@ -23,8 +23,9 @@
                                     <div class="divTableCell cellHeader">Estructura</div>
                                     <div class="divTableCell cellHeader">Acción</div>
                                 </div>
+                                
                                 {% for category in categories %}
-                                    <div class="divTableRow">
+                                    <div class="divTableRow dropable" category="{{ category.title }}">
                                         <div class="divTableCell">{{forloop.counter}}</div>
                                         <div class="divTableCell bold-text">
                                             {% if category.title %} {{category.title}} {% else %}-{% endif %}
@@ -39,7 +40,7 @@
                                         </div>
                                     </div>
                                     {% for subcategory in category.subcategories %}
-                                        <div class="divTableRow">
+                                        <div class="divTableRow dropable" category="{{ category.title }}" subcategory="{{ subcategory.title }}">
                                             <div class="divTableCell padding-left">
 
                                             </div>
@@ -56,7 +57,7 @@
                                             </div>
                                         </div>
                                         {% for file in subcategory.files %}
-                                            <div class="divTableRow">
+                                            <div class="divTableRow dragable" file_name="{{ file.file}}">
                                                 <div class="divTableCell padding-left100">
 
                                                 </div>
@@ -73,7 +74,7 @@
                                         {% endfor %}
                                     {% endfor %}
                                     {% for file in category.files %}
-                                        <div class="divTableRow">
+                                        <div class="divTableRow dragable" file_name="{{ file.file}}">
                                             <div class="divTableCell">
                                             </div>
                                             <div class="divTableCell cat-files-name">
@@ -374,5 +375,6 @@
       </div>
     </div>
 <input type="hidden" class="csrfToken" value="{{csrf_token}}">
+
 </body>
 {% endblock %}
