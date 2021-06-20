@@ -13,8 +13,12 @@
                     ],
                     "files": [
                         {
-                            "title": "Formative_Evaluation-_Computer",
-                            "file": "Formative_Evaluation-_Computer.xlsx"
+                            "title": "1",
+                            "file": "1.jpg"
+                        },
+                        {
+                            "title": "FF_UPW_Magna_Solutions_LO_high",
+                            "file": "FF_UPW_Magna_Solutions_LO_high.png"
                         }
                     ]
                 }
@@ -34,16 +38,12 @@
                     ],
                     "files": [
                         {
-                            "title": "3",
-                            "file": "3.jpg"
-                        },
-                        {
                             "title": "2",
                             "file": "2.jpg"
                         },
                         {
-                            "title": "1",
-                            "file": "1.jpg"
+                            "title": "3",
+                            "file": "3.jpg"
                         }
                     ]
                 },
@@ -52,16 +52,7 @@
                     "permissions": [
                         "socio"
                     ],
-                    "files": [
-                        {
-                            "title": "FF_UPW_Magna_Solutions_LO_high",
-                            "file": "FF_UPW_Magna_Solutions_LO_high.png"
-                        },
-                        {
-                            "title": "test123",
-                            "file": "test123.JPG"
-                        }
-                    ]
+                    "files": []
                 }
             ],
             "files": [

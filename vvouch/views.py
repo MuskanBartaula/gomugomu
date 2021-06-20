@@ -97,20 +97,20 @@ def handle_dragged_file(request):
     subcategory = request.POST.get('subcategory')
     filename = request.POST.get('filename')
     json_path = settings.FILE_ROOT + '/data.json'
-    
-    if category: 
-        path = settings.CATEGORY_ROOT + "/" + category + "/"
 
-    elif subcategory:
-        path = settings.CATEGORY_ROOT + "/" + category + "/" + subcategory
-
-    for root, dirs, files in os.walk(path):
+    if category and subcategory:
+        destination_path = settings.CATEGORY_ROOT + "/" + category + "/" + subcategory + "/" + filename
+    elif category:
+        destination_path = settings.CATEGORY_ROOT + "/" + category + "/" + filename
+    for root, _, files in os.walk(settings.CATEGORY_ROOT):
         if filename in files:
             current_path = os.path.join(root, filename)
             delete_dragged_archivo_json(request, json_path, current_path, filename)
-            file_exists = Path(path)
+            file_exists = os.path.exists(destination_path)
             if not file_exists:
-                shutil.move(current_path, path)
+                shutil.move(current_path, destination_path)
+                break
+                
     write_dragged_archivo_json(request, json_path, filename)
     return JsonResponse({'message': 'Done'})
 
@@ -118,30 +118,16 @@ def delete_dragged_archivo_json(new_data, filename, current_path, fileName):
     
     with open(filename, 'r+') as file:
         file_data = json.load(file)
-        if 'category' in new_data.POST:
-            for categories in file_data['categories']:
-                parent_directory = os.path.basename(os.path.dirname(current_path))
-                parent_parent_directory = os.path.basename(os.path.dirname(os.path.dirname(current_path)))
-                if parent_parent_directory == "categories":
-                    if categories['title'] == parent_directory:
-                        if "files" in categories:
-                            categories['files'] = [f for f in categories['files'] if not (f['file'] == fileName)]
-                else:
-                    if categories['title'] == parent_parent_directory:
-                        if "files" in categories:
-                            categories['files'] = [f for f in categories['files'] if not (f['file'] == fileName)]
-                        # if "subcategories" in categories:
-                        #     for subcategories in categories['subcategories']:
-                        #         if subcategories['title'] == parent_directory:
-                        #             if "files" in subcategories:
-                        #                 subcategories['files'] = [f for f in subcategories['files'] if not (f['file'] == fileName)]
-                    
-        elif 'subcategory' in new_data.POST:
+        for categories in file_data['categories']:
             parent_directory = os.path.basename(os.path.dirname(current_path))
-            subcategory_parent_directory = os.path.basename(os.path.dirname(os.path.dirname(current_path)))
-            for categories in file_data['categories']:
-                    if categories['title'] == subcategory_parent_directory:
-                        if "subcategories" in categories:
+            parent_parent_directory = os.path.basename(os.path.dirname(os.path.dirname(current_path)))
+            if parent_parent_directory == "categories":
+                if categories['title'] == parent_directory:
+                    if "files" in categories:
+                        categories['files'] = [f for f in categories['files'] if not (f['file'] == fileName)]
+            else:
+                if categories['title'] == parent_parent_directory:
+                    if "subcategories" in categories:
                             for subcategories in categories['subcategories']:
                                 if subcategories['title'] == parent_directory:
                                     if "files" in subcategories:
