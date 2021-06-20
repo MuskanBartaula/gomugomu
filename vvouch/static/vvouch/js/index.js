@@ -196,6 +196,18 @@ $(document).ready(function () {
         }
     });
 
+
+    function progress(e){
+
+        if(e.lengthComputable){
+            var max = e.total;
+            var current = e.loaded;
+    
+            var percent = parseInt((current * 100)/max);
+            $('#progressBar').attr('aria-valuenow', percent).css('width', percent + '%').text(percent + '%');
+        }  
+     }
+     
     $("#archivo-form").on("submit", function (evt) {
         evt.preventDefault();
         var all_ok = false;
@@ -209,17 +221,45 @@ $(document).ready(function () {
                 if($("#cat-sub-files")[0].files.length > 0) {
                     var __this = $(this);
                     var postRoute = '/add-archivo';
+                    var formData = new FormData(this)
+
+                    var xhr = new XMLHttpRequest()
+                    xhr.upload.addEventListener("progress", progress, false)
+                    // xhr.onreadystatechange = function(e) {
+                    //     if ( 4 == this.readyState ) {
+                    //         console.log(['xhr upload complete', e]);
+                    //     }
+                    // };
+                    
+                    xhr.open("POST", postRoute)
+                    xhr.setRequestHeader("Content-Type","multipart/form-data");
+                    xhr.send(formData)
+
+                   
+
                     $.ajax({
+                        xhr: function(){
+                            var myXhr = $.ajaxSettings.xhr();
+                            if(myXhr.upload){
+                                var xhr = new XMLHttpRequest()
+                                xhr.upload.addEventListener("progress", progress, false)
+                            }
+
+                            return myXhr;
+                        },
                         type: "POST",
                         url: postRoute,
-                        dataType: "multipart/form-data",
+                        // dataType: "multipart/form-data",
                         data: new FormData(this),
-                        async: false,
+                        // async: false,
                         cache: false,
                         contentType: false,
                         processData: false,
                         beforeSend: function(xhr) {
-                            $('.create-archivo').attr('disabled', true).text('Loading...')
+                            console.log(xhr);
+                            if(xhr.upload) {
+                                console.log("Upload")
+                            }
                         },
                         success: function (data) {
                             console.log(data);
