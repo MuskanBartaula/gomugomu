@@ -79,7 +79,7 @@ def add_archivo(request):
     return JsonResponse(data)
 
 def handle_uploaded_file(file, filename, request):
-    filename= filename.replace(' ', '_')
+    filename= filename.replace(' ', '_').replace('#', '')
     if request.POST['category'] and request.POST['subcategory']:
         with open(settings.CATEGORY_ROOT + "/" + request.POST['category'] + "/" + request.POST['subcategory'] + "/" + filename, 'wb+') as destination:
             for chunk in file.chunks():
@@ -399,7 +399,7 @@ def edit_archivo(request):
 
 
 def handle_edit_uploaded_file(file, filename, request):
-    filename= filename.replace(' ', '_')
+    filename= filename.replace(' ', '_').replace('#', '')
     if request.POST['category'] and request.POST['subcategory']:
         with open(settings.CATEGORY_ROOT + "/" + request.POST['category'] + "/" + request.POST['subcategory'] + "/" + filename, 'wb+') as destination:
             try:
@@ -453,7 +453,7 @@ def edit_archivo_category_files(request):
 
 
 def handle_edit_cat_uploaded_file(file, filename, request):
-    filename= filename.replace(' ', '_')
+    filename= filename.replace(' ', '_').replace('#', '')
     if request.POST['categoryfiles']:
         with open(settings.CATEGORY_ROOT + "/" + request.POST['categoryfiles'] + "/" + filename, 'wb+') as destination:
             try:
