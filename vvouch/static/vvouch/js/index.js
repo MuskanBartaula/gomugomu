@@ -225,11 +225,6 @@ $(document).ready(function () {
 
                     var xhr = new XMLHttpRequest()
                     xhr.upload.addEventListener("progress", progress, false)
-                    // xhr.onreadystatechange = function(e) {
-                    //     if ( 4 == this.readyState ) {
-                    //         console.log(['xhr upload complete', e]);
-                    //     }
-                    // };
                     
                     xhr.open("POST", postRoute)
                     xhr.setRequestHeader("Content-Type","multipart/form-data");
@@ -615,7 +610,7 @@ $(document).ready(function () {
     $("body").undelegate(".delete-subcategory", "click").delegate(".delete-subcategory", "click", function () {
         var category_title = $(this).attr("category-name")
         var subcategory_title = $(this).attr("subcategory-name")
-        swal("Advertencia!", "¿Está seguro de que desea eliminar la subcategoría? Perderás archivos...!", "warning", {
+        swal("Advertencia!", "¿Estás seguro de que desea eliminar la subcategoría seleccionada y todo su contenido?", "warning", {
             buttons: ["Cerrar", true],
         })
             .then((value) => {
@@ -653,7 +648,7 @@ $(document).ready(function () {
     $("body").undelegate(".delete-category-files", "click").delegate(".delete-category-files", "click", function () {
         var category_title = $(this).attr("category-name")
         var category_file_name = $(this).attr("category_file_name")
-        swal("Advertencia!", "¿Está seguro de que desea eliminar los archivos de categoría?", "warning", {
+        swal("Advertencia!", "¿Estás seguro de que desea eliminar el archivo seleccionado?", "warning", {
             buttons: ["Cancel", true],
         })
             .then((value) => {
