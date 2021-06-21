@@ -7,11 +7,14 @@
     <section id="fh5co-about" class="experts">
         <div class="container">
             <div class="row">
-                <div class="col-md-12" style="padding-bottom: 50px;">
+                <div class="col-md-10" style="padding-bottom: 50px;">
                     <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-plus"></i>Categoria</button>
                         <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#subModal"><i class="fas fa-plus"></i>Subcategoría</button>
                         <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#archivoModal"><i class="fas fa-plus"></i>Archivo</button>
                 </div>
+                <div class="col-md-2" style="padding-bottom: 50px;">
+                  <a href="{% url 'accounts:logout' %}" class="btn btn-danger" ><i class="fas fa-sign-out-alt"></i>Logout</a>
+              </div>
             </div>
             <div class="row">
                 <div class="col-md-12">

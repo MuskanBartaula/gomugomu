@@ -2,6 +2,7 @@ from pathlib import Path
 import re
 import logging
 import os
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login as auth_login, get_user_model, logout as auth_logout
 from django.shortcuts import render, redirect
 from vvouch import forms
@@ -25,6 +26,7 @@ SHA1_RE = re.compile('^[a-f0-9]{40}$')
 logger = logging.getLogger('django')
 
 
+@login_required
 def index(request):
     path = settings.FILE_ROOT + '/data.json'
     f = open(path, )
@@ -46,6 +48,7 @@ def index(request):
 
     return render(request, 'vvouch/index.html', {'categories': jsonData['categories'], "finalCategory": finalCategory, "finalSubCategory": finalSubCategory})
 
+@login_required
 def get_subcategory(request):
     data = {}
     path = settings.FILE_ROOT + '/data.json'
@@ -67,6 +70,7 @@ def get_subcategory(request):
 
     return JsonResponse(data)
 
+@login_required
 def add_archivo(request):
     data = {}
     if request.method == 'POST':
@@ -78,6 +82,8 @@ def add_archivo(request):
         data["success"] = 1
     return JsonResponse(data)
 
+
+@login_required
 def handle_uploaded_file(file, filename, request):
     filename= filename.replace(' ', '_').replace('#', '')
     if request.POST['category'] and request.POST['subcategory']:
@@ -92,6 +98,7 @@ def handle_uploaded_file(file, filename, request):
     write_archivo_json(request, path, filename)
 
 
+@login_required
 def handle_dragged_file(request):
     category = request.POST.get('category')
     subcategory = request.POST.get('subcategory')
@@ -137,6 +144,7 @@ def delete_dragged_archivo_json(new_data, filename, current_path, fileName):
         file.seek(0)
         json.dump(file_data, file, indent = 4)
         file.close()
+
 
 def write_dragged_archivo_json(new_data, filename, fileName):
     with open(filename, 'r+') as file:
@@ -194,6 +202,8 @@ def write_archivo_json(new_data, filename, fileName):
         json.dump(file_data, file, indent = 4)
         file.close()
 
+
+@login_required
 def add_category(request):
     data = {}
     if request.method == 'POST':
@@ -231,6 +241,7 @@ def write_json(new_data, filename):
         json.dump(file_data, file, indent = 4)
 
 
+@login_required
 def edit_category(request):
     data = {}
     if request.method == 'POST':
@@ -277,6 +288,8 @@ def write_edit_category_json(request, filename):
         json.dump(file_data, file, indent = 4)
         file.close()
 
+
+@login_required
 def edit_subcategory(request):
     data = {}
     if request.method == 'POST':
@@ -315,6 +328,7 @@ def edit_subcategory(request):
     return JsonResponse(data)
 
 
+@login_required
 def write_edit_subcategory_json(request, filename):
     old_subcategory_title = request.POST['old_subcategory_title']
     subcategory_title = request.POST['subcategory_title']
@@ -386,6 +400,8 @@ def write_edit_subcategory_json(request, filename):
         json.dump(file_data, file, indent = 4)
         file.close()
 
+
+@login_required
 def edit_archivo(request):
     data = {}
     if request.method == 'POST':
@@ -398,6 +414,7 @@ def edit_archivo(request):
     return JsonResponse(data)
 
 
+@login_required
 def handle_edit_uploaded_file(file, filename, request):
     filename= filename.replace(' ', '_').replace('#', '')
     if request.POST['category'] and request.POST['subcategory']:
@@ -411,6 +428,8 @@ def handle_edit_uploaded_file(file, filename, request):
         path = settings.FILE_ROOT + '/data.json'
         edit_archivo_json(request, path, filename)
 
+
+@login_required
 def edit_archivo_json(new_data, filename, fileName):
     with open(filename, 'r+') as file:
         file_data = json.load(file)
@@ -440,6 +459,7 @@ def edit_archivo_json(new_data, filename, fileName):
         file.close()
 
 
+@login_required
 def edit_archivo_category_files(request):
     data = {}
     if request.method == 'POST':
@@ -452,6 +472,7 @@ def edit_archivo_category_files(request):
     return JsonResponse(data)
 
 
+@login_required
 def handle_edit_cat_uploaded_file(file, filename, request):
     filename= filename.replace(' ', '_').replace('#', '')
     if request.POST['categoryfiles']:
@@ -487,6 +508,7 @@ def edit_archivo_json(new_data, filename, fileName):
         json.dump(file_data, file, indent = 4)
         file.close()
 
+@login_required
 def edit_dragged_archivo_json(new_data, filename, fileName):
     with open(filename, 'r+') as file:
         file_data = json.load(file)
@@ -511,6 +533,7 @@ def edit_dragged_archivo_json(new_data, filename, fileName):
 
 
 
+@login_required
 def add_subcategory(request):
     success = ''
     data = {}
@@ -550,6 +573,7 @@ def write_subcategory_json(new_data, filename):
         path = os.path.join(parent_dir, directory)
         os.mkdir(path)
 
+@login_required
 def delete_category(request):
     success = ''
     data = {}
@@ -576,6 +600,7 @@ def delete_category(request):
     return JsonResponse(data)
 
 
+@login_required
 def delete_category_json(request, filename):
     with open(filename, 'r+') as file:
         file_data = json.load(file)
@@ -593,6 +618,7 @@ def delete_category_json(request, filename):
         file.close()
 
 
+@login_required
 def delete_subcategory(request):
     success = ''
     data = {}
@@ -620,6 +646,7 @@ def delete_subcategory(request):
     return JsonResponse(data)
 
 
+@login_required
 def delete_subcategory_json(request, filename):
     with open(filename, 'r+') as file:
         file_data = json.load(file)
@@ -643,6 +670,7 @@ def delete_subcategory_json(request, filename):
 
 
 
+@login_required
 def delete_category_files(request):
     success = ''
     data = {}
@@ -671,6 +699,7 @@ def delete_category_files(request):
     return JsonResponse(data)
 
 
+@login_required
 def delete_category_files_json(request, filename):
     with open(filename, 'r+') as file:
         file_data = json.load(file)
@@ -691,6 +720,7 @@ def delete_category_files_json(request, filename):
         file.close()
 
 
+@login_required
 def delete_subcategory_files(request):
     success = ''
     data = {}
@@ -720,6 +750,7 @@ def delete_subcategory_files(request):
     return JsonResponse(data)
 
 
+@login_required
 def delete_subcategory_files_json(request, filename):
     with open(filename, 'r+') as file:
         file_data = json.load(file)
@@ -746,6 +777,7 @@ def delete_subcategory_files_json(request, filename):
         file.close()
 
 
+@login_required
 def get_subcategory_permission(request):
     packet = {}
     path = settings.FILE_ROOT + '/data.json'
@@ -763,6 +795,7 @@ def get_subcategory_permission(request):
         file.close()        
         return JsonResponse(packet)
 
+@login_required
 def get_edit_subcategory_permission(request):
     packet={}
     path = settings.FILE_ROOT + '/data.json'
@@ -790,6 +823,7 @@ def data_json(request):
         return JsonResponse(file_data)
 
 
+@login_required
 def edit_permissions_in_subcategories(request):
     packet={}
     path = settings.FILE_ROOT + '/data.json'

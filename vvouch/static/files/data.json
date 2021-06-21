@@ -23,42 +23,62 @@
                     ]
                 }
             ],
-            "files": []
-        },
-        {
-            "title": "Categoria socio",
-            "permissions": [
-                "socio"
-            ],
-            "subcategories": [
-                {
-                    "title": "Imagenes Paisaje",
-                    "permissions": [
-                        "socio"
-                    ],
-                    "files": [
-                        {
-                            "title": "2",
-                            "file": "2.jpg"
-                        },
-                        {
-                            "title": "3",
-                            "file": "3.jpg"
-                        }
-                    ]
-                },
-                {
-                    "title": "Categoria ej",
-                    "permissions": [
-                        "socio"
-                    ],
-                    "files": []
-                }
-            ],
             "files": [
                 {
-                    "title": "test123",
-                    "file": "test123.JPG"
+                    "title": "rec-screen_(1)",
+                    "file": "rec-screen_(1).webm"
+                },
+                {
+                    "title": "Export-Html-Table-To-Excel-Spreadsheet-using-jQuery-table2excel",
+                    "file": "Export-Html-Table-To-Excel-Spreadsheet-using-jQuery-table2excel.zip"
+                },
+                {
+                    "title": "janajyoti",
+                    "file": "janajyoti.zip"
+                },
+                {
+                    "title": "Formative_Evaluation-_Computer",
+                    "file": "Formative_Evaluation-_Computer.xlsx"
+                },
+                {
+                    "title": "116F3BF7-CA88-40A3-8610-E07500D2D92C",
+                    "file": "116F3BF7-CA88-40A3-8610-E07500D2D92C.jpeg"
+                },
+                {
+                    "title": "back_of_computer",
+                    "file": "back_of_computer.png"
+                },
+                {
+                    "title": "MarksheetLedger-Nursery",
+                    "file": "MarksheetLedger-Nursery.xls"
+                },
+                {
+                    "title": "Export-Html-Table-To-Excel-Spreadsheet-using-jQuery-table2excel",
+                    "file": "Export-Html-Table-To-Excel-Spreadsheet-using-jQuery-table2excel.zip"
+                },
+                {
+                    "title": "janajyoti",
+                    "file": "janajyoti.zip"
+                },
+                {
+                    "title": "Factura_retencion_7",
+                    "file": "Factura_retencion_7.ods"
+                },
+                {
+                    "title": "Presupuesto",
+                    "file": "Presupuesto.ods"
+                },
+                {
+                    "title": "_Getintopc",
+                    "file": "_Getintopc.com_Adobe_Premiere_Pro_2021_v15.0.0.41x64_Multilingual.rar"
+                },
+                {
+                    "title": "_Getintopc",
+                    "file": "_Getintopc.com_Adobe_Premiere_Pro_2021_v15.0.0.41x64_Multilingual.rar"
+                },
+                {
+                    "title": "gomugomu88-union-oficiales-14946f20cf5f",
+                    "file": "gomugomu88-union-oficiales-14946f20cf5f.zip"
                 }
             ]
         }

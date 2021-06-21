@@ -3,74 +3,74 @@ from django.contrib.auth.models import AbstractUser
 from django.conf import settings
 
 
-class User(AbstractUser):
-    USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = []  # removes email from REQUIRED_FIELDS
-    type = models.CharField(
-        max_length=30,
-        default='user'
-    )
-    username = models.CharField(
-        'username',
-        max_length=100,
-        blank=True,
-        default=''
-    )
-    email = models.EmailField(unique=True)  # changes email to unique and blank to false
-    mobile_number = models.CharField(
-        max_length=100,
-        blank=True,
-    )
-    cnic = models.CharField(
-        max_length=100,
-        blank=True,
-    )
-    address = models.TextField(
-      blank=True,  
-      max_length=100,
-    )
-    message = models.TextField(
-      blank=True,  
-      max_length=100,
-    )
-    business_name = models.CharField(
-        blank=True,
-        max_length=100,
-    )
-    website = models.CharField(
-        blank=True,
-        max_length=100,
-    )
-    insta_page = models.CharField(
-        blank=True,
-        max_length=100,
-    )
-    fb_page = models.CharField(
-        blank=True,
-        max_length=100,
-    )
-    courier = models.CharField(
-        blank=True,
-        max_length=100,
-    )
-    business_category = models.CharField(
-        blank=True,
-        max_length=100,
-    )
-    is_secp_registered = models.BooleanField(
-        default=False,
-    )
-    payment_mode = models.CharField(
-        blank=True,
-        max_length=100,
-    )
-    is_cod = models.CharField(
-        blank=True,
-        max_length=100,
-    )
+# class User(AbstractUser):
+#     USERNAME_FIELD = 'email'
+#     REQUIRED_FIELDS = []  # removes email from REQUIRED_FIELDS
+#     type = models.CharField(
+#         max_length=30,
+#         default='user'
+#     )
+#     username = models.CharField(
+#         'username',
+#         max_length=100,
+#         blank=True,
+#         default=''
+#     )
+#     email = models.EmailField(unique=True)  # changes email to unique and blank to false
+#     mobile_number = models.CharField(
+#         max_length=100,
+#         blank=True,
+#     )
+#     cnic = models.CharField(
+#         max_length=100,
+#         blank=True,
+#     )
+#     address = models.TextField(
+#       blank=True,  
+#       max_length=100,
+#     )
+#     message = models.TextField(
+#       blank=True,  
+#       max_length=100,
+#     )
+#     business_name = models.CharField(
+#         blank=True,
+#         max_length=100,
+#     )
+#     website = models.CharField(
+#         blank=True,
+#         max_length=100,
+#     )
+#     insta_page = models.CharField(
+#         blank=True,
+#         max_length=100,
+#     )
+#     fb_page = models.CharField(
+#         blank=True,
+#         max_length=100,
+#     )
+#     courier = models.CharField(
+#         blank=True,
+#         max_length=100,
+#     )
+#     business_category = models.CharField(
+#         blank=True,
+#         max_length=100,
+#     )
+#     is_secp_registered = models.BooleanField(
+#         default=False,
+#     )
+#     payment_mode = models.CharField(
+#         blank=True,
+#         max_length=100,
+#     )
+#     is_cod = models.CharField(
+#         blank=True,
+#         max_length=100,
+#     )
     
-    def get_full_name(self):
-        return "{0} {1}".format(self.first_name, self.last_name)
+#     def get_full_name(self):
+#         return "{0} {1}".format(self.first_name, self.last_name)
 
 
 class Activation(models.Model):
