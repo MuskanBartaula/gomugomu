@@ -1,0 +1,1934 @@
+{
+    "categories": [
+        {
+            "title": "01 GENERALES Y BASICAS",
+            "permissions": [
+                "administrator",
+                "socio"
+            ],
+            "subcategories": [],
+            "files": [
+                {
+                    "title": "1882_Real_Decreto_de_14_de_septiembre_Ley_de_Enjuiciamiento_Criminal",
+                    "file": "1882_Real_Decreto_de_14_de_septiembre_Ley_de_Enjuiciamiento_Criminal.pdf"
+                },
+                {
+                    "title": "1978_Constituci\u00f3n_Espa\u00f1ola",
+                    "file": "1978_Constituci\u00f3n_Espa\u00f1ola.pdf"
+                },
+                {
+                    "title": "1981_Ley_Organica_4,_de_estados_de_alarma_excepcion_y_sitio",
+                    "file": "1981_Ley_Organica_4,_de_estados_de_alarma_excepcion_y_sitio.pdf"
+                },
+                {
+                    "title": "1984_Ley_30_Medidas_Funcion_Publica",
+                    "file": "1984_Ley_30_Medidas_Funcion_Publica.pdf"
+                },
+                {
+                    "title": "1986_LeyOrganica_2_Fuerzas_y_Cuerpos_de_Seguridad",
+                    "file": "1986_LeyOrganica_2_Fuerzas_y_Cuerpos_de_Seguridad.pdf"
+                },
+                {
+                    "title": "1995_Ley_Org\u00e1nica_10,_del_C\u00f3digo_Penal",
+                    "file": "1995_Ley_Org\u00e1nica_10,_del_C\u00f3digo_Penal.pdf"
+                },
+                {
+                    "title": "1999_LeyDEROGADA_42_Regimen_Personal_Guardia_Civil",
+                    "file": "1999_LeyDEROGADA_42_Regimen_Personal_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "2001_Ley_Org\u00e1nica_4,_de_12_de_noviembre,_reguladora_del_Derecho_de_Petici\u00f3n",
+                    "file": "2001_Ley_Org\u00e1nica_4,_de_12_de_noviembre,_reguladora_del_Derecho_de_Petici\u00f3n.pdf"
+                },
+                {
+                    "title": "2005_LeyOrganica_5_Defensa_Nacional",
+                    "file": "2005_LeyOrganica_5_Defensa_Nacional.pdf"
+                },
+                {
+                    "title": "2007_Ley_39_Carrera_Militar",
+                    "file": "2007_Ley_39_Carrera_Militar.pdf"
+                },
+                {
+                    "title": "2007_LeyOrganica_11_Derechos_y_deberes_Guardia_Civil",
+                    "file": "2007_LeyOrganica_11_Derechos_y_deberes_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "2011_LeyOrganica_9_Derechos_y_deberes_FAS",
+                    "file": "2011_LeyOrganica_9_Derechos_y_deberes_FAS.pdf"
+                },
+                {
+                    "title": "2014_Ley_29_Regimen_Personal_Guardia_Civil",
+                    "file": "2014_Ley_29_Regimen_Personal_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "2015_Ley_36_Seguridad_Nacional",
+                    "file": "2015_Ley_36_Seguridad_Nacional.pdf"
+                },
+                {
+                    "title": "2015_LeyOrganica_9_Regimen_Personal_Policia_Nacional",
+                    "file": "2015_LeyOrganica_9_Regimen_Personal_Policia_Nacional.pdf"
+                },
+                {
+                    "title": "2015_RDLegislativo_5_Estatuto_Basico_Empleado_Publico_EBEP",
+                    "file": "2015_RDLegislativo_5_Estatuto_Basico_Empleado_Publico_EBEP.pdf"
+                },
+                {
+                    "title": "2016_Directiva(UE)_680_Proteccion_datos_investigaciones_penales",
+                    "file": "2016_Directiva(UE)_680_Proteccion_datos_investigaciones_penales.pdf"
+                },
+                {
+                    "title": "2016_Reglamento(UE)_679_Proteccion_tratamiento_datos_personales",
+                    "file": "2016_Reglamento(UE)_679_Proteccion_tratamiento_datos_personales.pdf"
+                },
+                {
+                    "title": "2018_LeyOrganica_3_Proteccion_Datos_Personales",
+                    "file": "2018_LeyOrganica_3_Proteccion_Datos_Personales.pdf"
+                },
+                {
+                    "title": "2021_INFORME-CCN_-_Recomendaciones_Ciberseguridad",
+                    "file": "2021_INFORME-CCN_-_Recomendaciones_Ciberseguridad.pdf"
+                },
+                {
+                    "title": "2021_LeyOrganica_7_proteccion_datos_investigaciones_penales",
+                    "file": "2021_LeyOrganica_7_proteccion_datos_investigaciones_penales.pdf"
+                },
+                {
+                    "title": "2021_Cambios_resumen_ley_infancia",
+                    "file": "2021_Cambios_resumen_ley_infancia.pdf"
+                }
+            ]
+        },
+        {
+            "title": "02 PROCEDIMIENTO ADMINISTRATIVO Y CONTENCIOSO",
+            "permissions": [
+                "administrator",
+                "socio",
+                "no_socio"
+            ],
+            "files": [
+                {
+                    "title": "1980_RealDecreto_485_Responsabilidad_administrativa_Guardia_Civil",
+                    "file": "1980_RealDecreto_485_Responsabilidad_administrativa_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "1998_Ley_29_Contencioso_Administrativo_LJCA",
+                    "file": "1998_Ley_29_Contencioso_Administrativo_LJCA.pdf"
+                },
+                {
+                    "title": "2010_RealDecreto_137_Emision_comunicacion_interesados",
+                    "file": "2010_RealDecreto_137_Emision_comunicacion_interesados.pdf"
+                },
+                {
+                    "title": "2013_Ley_19_Transparencia_y_bueno_gobierno",
+                    "file": "2013_Ley_19_Transparencia_y_bueno_gobierno.pdf"
+                },
+                {
+                    "title": "2015_Ley_39_Procedimiento_Administrativo_LPAC",
+                    "file": "2015_Ley_39_Procedimiento_Administrativo_LPAC.pdf"
+                },
+                {
+                    "title": "2015_Ley_40_Sector_Publico_LEREJU",
+                    "file": "2015_Ley_40_Sector_Publico_LEREJU.pdf"
+                },
+                {
+                    "title": "2021_Real_Decreto_203_Reglamento_actuacion_sector_publico_electronico_",
+                    "file": "2021_Real_Decreto_203_Reglamento_actuacion_sector_publico_electronico_.pdf"
+                },
+                {
+                    "title": "2021_Guia_de_Tramites_Ministerio_Interior",
+                    "file": "2021_Guia_de_Tramites_Ministerio_Interior.pdf"
+                }
+            ],
+            "subcategories": [
+                {
+                    "title": "Normas Internas de Tramitaci\u00f3n (S\u00f3lo para socios UO)",
+                    "permissions": [
+                        "socio",
+                        "administrator"
+                    ],
+                    "files": [
+                        {
+                            "title": "2000_OG_11_Denominacion_normas_disposiciones_internas",
+                            "file": "2000_OG_11_Denominacion_normas_disposiciones_internas.pdf"
+                        },
+                        {
+                            "title": "2021_OG_6_Elaboracion_Convenios_ambito_GC",
+                            "file": "2021_OG_6_Elaboracion_Convenios_ambito_GC.pdf"
+                        }
+                    ]
+                },
+                {
+                    "title": "Jurisprudencia (S\u00f3lo para socios)",
+                    "permissions": [
+                        "socio",
+                        "administrator"
+                    ],
+                    "files": [
+                        {
+                            "title": "SAN_2020-7-28__confirma_cese_COL_Corb\u00cd",
+                            "file": "SAN_2020-7-28__confirma_cese_COL_Corb\u00cd.pdf"
+                        },
+                        {
+                            "title": "Sentencia_P\u00e9rez_de_los_Cobos",
+                            "file": "Sentencia_P\u00e9rez_de_los_Cobos.pdf"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "03 ENSE\u00d1ANZA",
+            "permissions": [
+                "administrator",
+                "socio",
+                "no_socio"
+            ],
+            "files": [
+                {
+                    "title": "1999_OrdenPRE_2_Organizacion_funcionamiento_Centros_Docentes",
+                    "file": "1999_OrdenPRE_2_Organizacion_funcionamiento_Centros_Docentes.pdf"
+                },
+                {
+                    "title": "2006_Real_Decreto_313_(DEROGADO)_Directrices_acceso_Suboficiales_y_Cabos_y_Guardias",
+                    "file": "2006_Real_Decreto_313_(DEROGADO)_Directrices_acceso_Suboficiales_y_Cabos_y_Guardias.pdf"
+                },
+                {
+                    "title": "2009_RealDecreto_1959_Creacion_Centro_Universitario_CUGC",
+                    "file": "2009_RealDecreto_1959_Creacion_Centro_Universitario_CUGC.pdf"
+                },
+                {
+                    "title": "2010_OrdenMDE_181110_Competencia_linguistica_FAS",
+                    "file": "2010_OrdenMDE_181110_Competencia_linguistica_FAS.pdf"
+                },
+                {
+                    "title": "2011_OrdenCAM_4682_Adscripcion_Centro_Universitario_a_Universidad_Carlos_III",
+                    "file": "2011_OrdenCAM_4682_Adscripcion_Centro_Universitario_a_Universidad_Carlos_III.pdf"
+                },
+                {
+                    "title": "2011_OrdenPRE_2900_Niveles_competencia_linguistica_SLP_GC",
+                    "file": "2011_OrdenPRE_2900_Niveles_competencia_linguistica_SLP_GC.pdf"
+                },
+                {
+                    "title": "2015_Orden_PRE_2840_Cursos_Complementos_Formacion_CCF",
+                    "file": "2015_Orden_PRE_2840_Cursos_Complementos_Formacion_CCF.pdf"
+                },
+                {
+                    "title": "2018_OrdenPCI_734_Centros_docentes_formacion_Guardia_Civil",
+                    "file": "2018_OrdenPCI_734_Centros_docentes_formacion_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "2018_OrdenPCI_975_Curso_ascenso_a_Comandante",
+                    "file": "2018_OrdenPCI_975_Curso_ascenso_a_Comandante.pdf"
+                },
+                {
+                    "title": "2018_OrdenPCI_976_Curso_ascenso_Coronel_y_Teniente_Coronel_Escalas_Facultativas",
+                    "file": "2018_OrdenPCI_976_Curso_ascenso_Coronel_y_Teniente_Coronel_Escalas_Facultativas.pdf"
+                },
+                {
+                    "title": "2018_OrdenPCI_977_Curso_ascenso_Suboficial_Mayor_y_Cabo_Mayor",
+                    "file": "2018_OrdenPCI_977_Curso_ascenso_Suboficial_Mayor_y_Cabo_Mayor.pdf"
+                },
+                {
+                    "title": "2018_OrdenPCI_978_Curriculos_ense\u00f1anza_Escala_Oficiales",
+                    "file": "2018_OrdenPCI_978_Curriculos_ense\u00f1anza_Escala_Oficiales.pdf"
+                },
+                {
+                    "title": "2018_RealDecreto_131_Ordenacion_ense\u00f1anza_Guardia_Civil",
+                    "file": "2018_RealDecreto_131_Ordenacion_ense\u00f1anza_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "2019_OrdenINT_1135_Registro_Centros_Cursos_y_Titulos_Guardia_Civil",
+                    "file": "2019_OrdenINT_1135_Registro_Centros_Cursos_y_Titulos_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "2019_OrdenPCI_155_Ingreso_Escala_Cabos_y_Guardias",
+                    "file": "2019_OrdenPCI_155_Ingreso_Escala_Cabos_y_Guardias.pdf"
+                },
+                {
+                    "title": "2019_OrdenPCI_349_Perfeccionamiento_y_Altos_Estudios",
+                    "file": "2019_OrdenPCI_349_Perfeccionamiento_y_Altos_Estudios.pdf"
+                },
+                {
+                    "title": "2019_OrdenPCI_361_Expediente_academico_Guardia_Civil",
+                    "file": "2019_OrdenPCI_361_Expediente_academico_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "2019_OrdenPCI_362_Pruebas_fisicas_Guardia_Civil",
+                    "file": "2019_OrdenPCI_362_Pruebas_fisicas_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "2019_OrdenPCI_1151_Deportistas_alto_nivel",
+                    "file": "2019_OrdenPCI_1151_Deportistas_alto_nivel.pdf"
+                },
+                {
+                    "title": "2020_RealDecreto_935_Planes_estudios_Suboficiales_y_Cabos_y_Guardias",
+                    "file": "2020_RealDecreto_935_Planes_estudios_Suboficiales_y_Cabos_y_Guardias.pdf"
+                },
+                {
+                    "title": "2021_Orden_PCM_6_Centros_docentes_alumnado_proferorado",
+                    "file": "2021_Orden_PCM_6_Centros_docentes_alumnado_proferorado.pdf"
+                },
+                {
+                    "title": "2021_OrdenPCM_576_Planes_estudio_Cabos_y_Guardias",
+                    "file": "2021_OrdenPCM_576_Planes_estudio_Cabos_y_Guardias.pdf"
+                },
+                {
+                    "title": "2021_OrdenPCM_577_Planes_estudio_Suboficiales",
+                    "file": "2021_OrdenPCM_577_Planes_estudio_Suboficiales.pdf"
+                }
+            ],
+            "subcategories": [
+                {
+                    "title": "\u00d3rdenes Generales, Resoluciones y Acuerdos (S\u00f3lo para socios UO)",
+                    "permissions": [
+                        "socio",
+                        "administrator"
+                    ],
+                    "files": [
+                        {
+                            "title": "2013_OG_8_Examen_competencia_linguistica_idiomas_SLP_GC",
+                            "file": "2013_OG_8_Examen_competencia_linguistica_idiomas_SLP_GC.pdf"
+                        },
+                        {
+                            "title": "2017_Acuerdo_23ago_Formacion_Gendarmeria_Nacional_Francesa",
+                            "file": "2017_Acuerdo_23ago_Formacion_Gendarmeria_Nacional_Francesa.pdf"
+                        },
+                        {
+                            "title": "2017_Resolucion_04sep_MECES_Escala_Oficiales_42_99",
+                            "file": "2017_Resolucion_04sep_MECES_Escala_Oficiales_42_99.pdf"
+                        },
+                        {
+                            "title": "2017_Resolucion_04sep_MECES_Escala_Superior_Oficiales_42_99",
+                            "file": "2017_Resolucion_04sep_MECES_Escala_Superior_Oficiales_42_99.pdf"
+                        },
+                        {
+                            "title": "2019_InstruccionMDE_27_Convalidaciones_idiomas_FAS_",
+                            "file": "2019_InstruccionMDE_27_Convalidaciones_idiomas_FAS_.pdf"
+                        },
+                        {
+                            "title": "2019_OG_3_Bases_curso_capacitacion_ascenso_a_Cabo",
+                            "file": "2019_OG_3_Bases_curso_capacitacion_ascenso_a_Cabo.pdf"
+                        },
+                        {
+                            "title": "2019_OG_4_Evaluaci\u00f3n_alumnos_Escala_Oficiales",
+                            "file": "2019_OG_4_Evaluaci\u00f3n_alumnos_Escala_Oficiales.pdf"
+                        },
+                        {
+                            "title": "2019_OG_8_Registro_Actividades_Formativas_Interes_RAFI",
+                            "file": "2019_OG_8_Registro_Actividades_Formativas_Interes_RAFI.pdf"
+                        },
+                        {
+                            "title": "2020_Resolucion_25jun_Convenio_Centro_Universitario_y_Universidad_Carlos_III",
+                            "file": "2020_Resolucion_25jun_Convenio_Centro_Universitario_y_Universidad_Carlos_III.pdf"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "04 HISTORIAL PROFESIONAL",
+            "permissions": [
+                "administrator",
+                "socio",
+                "no_socio"
+            ],
+            "files": [
+                {
+                    "title": "2016_OrdenPRE__Hoja_servicios_GC",
+                    "file": "2016_OrdenPRE__Hoja_servicios_GC.pdf"
+                }
+            ],
+            "subcategories": [
+                {
+                    "title": "Restringida - S\u00f3lo para socios de la UO.",
+                    "permissions": [
+                        "socio",
+                        "administrator"
+                    ],
+                    "files": [
+                        {
+                            "title": "IPECGUCI_Estudios_Profesionales_1",
+                            "file": "IPECGUCI_Estudios_Profesionales_1.pdf.pdf"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "05 EVALUACIONES Y ASCENSOS (S\u00f3lo para socios de la UO)",
+            "permissions": [
+                "administrator",
+                "socio"
+            ],
+            "files": [
+                {
+                    "title": "2015_Guia_evaluacion_desempe\u00f1oPsicologia_IPECGUCI",
+                    "file": "2015_Guia_evaluacion_desempe\u00f1oPsicologia_IPECGUCI.pdf"
+                },
+                {
+                    "title": "2015_InstruccionTecnicaMaper_IPECGUCI",
+                    "file": "2015_InstruccionTecnicaMaper_IPECGUCI.pdf"
+                },
+                {
+                    "title": "2015_OrdenPRE_266_Normas_IPECGUCI",
+                    "file": "2015_OrdenPRE_266_Normas_IPECGUCI.pdf"
+                },
+                {
+                    "title": "2017_RealDecreto__512_Reglamento_evaluaciones_y_ascensos",
+                    "file": "2017_RealDecreto__512_Reglamento_evaluaciones_y_ascensos.pdf"
+                },
+                {
+                    "title": "2019_OG_1_(CONSOLIDADO_marzo_2021)_Valoracion_meritos_y_aptitudes",
+                    "file": "2019_OG_1_(CONSOLIDADO_marzo_2021)_Valoracion_meritos_y_aptitudes.pdf"
+                },
+                {
+                    "title": "2019_OG_2_Composicion_organos_evaluacion",
+                    "file": "2019_OG_2_Composicion_organos_evaluacion.pdf"
+                },
+                {
+                    "title": "2019_OrdenPCI_346_Normas_objetivas_evaluacion",
+                    "file": "2019_OrdenPCI_346_Normas_objetivas_evaluacion.pdf"
+                },
+                {
+                    "title": "2019_OrdenPCI_347_Condiciones_especificas_ascenso",
+                    "file": "2019_OrdenPCI_347_Condiciones_especificas_ascenso.pdf"
+                },
+                {
+                    "title": "2019_OrdenPCI_348_Relacion_vacantes_evaluados",
+                    "file": "2019_OrdenPCI_348_Relacion_vacantes_evaluados.pdf"
+                },
+                {
+                    "title": "2021_marzo_FAQ_08_Evaluaciones_y_ascensos",
+                    "file": "2021_marzo_FAQ_08_Evaluaciones_y_ascensos.pdf"
+                }
+            ]
+        },
+        {
+            "title": "06 DESTINOS, COMISIONES Y PLANTILLAS",
+            "permissions": [
+                "administrator",
+                "socio",
+                "no_socio"
+            ],
+            "files": [
+                {
+                    "title": "1987_RealDecreto_8814_CECIR",
+                    "file": "1987_RealDecreto_8814_CECIR.pdf"
+                },
+                {
+                    "title": "1995_RealDecreto_364_Reglamento_destinos_funcionarios",
+                    "file": "1995_RealDecreto_364_Reglamento_destinos_funcionarios.pdf"
+                },
+                {
+                    "title": "2006_RealDecreto_1073_Plantilla_GC_2006_2011",
+                    "file": "2006_RealDecreto_1073_Plantilla_GC_2006_2011.pdf"
+                },
+                {
+                    "title": "2013_RealDecreto_388_Plantilla_GC_2013_2018",
+                    "file": "2013_RealDecreto_388_Plantilla_GC_2013_2018.pdf"
+                },
+                {
+                    "title": "2017_RealDecreto_848_Reglamento_destinos_(ANULADO_TS)",
+                    "file": "2017_RealDecreto_848_Reglamento_destinos_(ANULADO_TS).pdf"
+                },
+                {
+                    "title": "2017_RealDecreto_872_Plantilla_GC_2017_2021",
+                    "file": "2017_RealDecreto_872_Plantilla_GC_2017_2021.pdf"
+                },
+                {
+                    "title": "2018_OrdenINT_359_(DEROGADA)_Clasificacion_y_provision_destinos",
+                    "file": "2018_OrdenINT_359_(DEROGADA)_Clasificacion_y_provision_destinos.pdf"
+                },
+                {
+                    "title": "2019_RealDecreto_470_Reglamento_destinos",
+                    "file": "2019_RealDecreto_470_Reglamento_destinos.pdf"
+                },
+                {
+                    "title": "2021_OrdenINT_26_Clasificacion_y_provision_destinos",
+                    "file": "2021_OrdenINT_26_Clasificacion_y_provision_destinos.pdf"
+                }
+            ],
+            "subcategories": [
+                {
+                    "title": "Jurisprudencia - (S\u00f3lo para socios de la UO)",
+                    "permissions": [
+                        "socio",
+                        "administrator"
+                    ],
+                    "files": [
+                        {
+                            "title": "24-6-20_ESTIMAN_N_RECURSO_DESTINOS_SGTOS_SIN_COSTAS_2",
+                            "file": "24-6-20_ESTIMAN_N_RECURSO_DESTINOS_SGTOS_SIN_COSTAS_2.pdf"
+                        },
+                        {
+                            "title": "2020_STS_4186_14dic2020_libre_designacion_apto_limitaciones_reserva",
+                            "file": "2020_STS_4186_14dic2020_libre_designacion_apto_limitaciones_reserva.pdf"
+                        },
+                        {
+                            "title": "2020_STS_4216_16dic2020_destinos_necesidades_servicio_anuncio",
+                            "file": "2020_STS_4216_16dic2020_destinos_necesidades_servicio_anuncio.pdf"
+                        }
+                    ]
+                },
+                {
+                    "title": "\u00d3rdenes Generales y Normativa Complementaria - (S\u00f3lo para socios UO)",
+                    "permissions": [
+                        "socio",
+                        "administrator"
+                    ],
+                    "files": [
+                        {
+                            "title": "1989_OG_11_Beneficios_Pais_Vasco_y_Navarra",
+                            "file": "1989_OG_11_Beneficios_Pais_Vasco_y_Navarra.pdf"
+                        },
+                        {
+                            "title": "2018_OG_2_Asignacion_destinos_y_ocupacion_temporal_(comisiones_servicio)",
+                            "file": "2018_OG_2_Asignacion_destinos_y_ocupacion_temporal_(comisiones_servicio).pdf"
+                        },
+                        {
+                            "title": "2018_OG_3_FICHAS_Provision_destinos_Concurso_Meritos",
+                            "file": "2018_OG_3_FICHAS_Provision_destinos_Concurso_Meritos.pdf"
+                        },
+                        {
+                            "title": "2018_OG_4_Relacion_puestos_organicos_unidad",
+                            "file": "2018_OG_4_Relacion_puestos_organicos_unidad.pdf"
+                        },
+                        {
+                            "title": "2018_Resolucion_peticion_destinos",
+                            "file": "2018_Resolucion_peticion_destinos.pdf"
+                        },
+                        {
+                            "title": "2020_Forma_de_dirimir_adjudicaci\u00f3n_vacantes_de_Oficial_por_antig\u00fcedad_ante_colisi\u00f3n_de_las_dos_escalas",
+                            "file": "2020_Forma_de_dirimir_adjudicaci\u00f3n_vacantes_de_Oficial_por_antig\u00fcedad_ante_colisi\u00f3n_de_las_dos_escalas.pdf"
+                        },
+                        {
+                            "title": "2021_Calendario_anuncio_vacantes",
+                            "file": "2021_Calendario_anuncio_vacantes.pdf"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "07 ESPECIALIDADES",
+            "permissions": [
+                "administrator",
+                "socio",
+                "no_socio"
+            ],
+            "files": [
+                {
+                    "title": "1987_Real_Decreto_769,_sobre_regulaci\u00f3n_de_la_Polic\u00eda_Judicial",
+                    "file": "1987_Real_Decreto_769,_sobre_regulaci\u00f3n_de_la_Polic\u00eda_Judicial.pdf"
+                },
+                {
+                    "title": "1988_RealDecreto_434_Casa_Real",
+                    "file": "1988_RealDecreto_434_Casa_Real.pdf"
+                },
+                {
+                    "title": "2006_OrdenPRE_3108_Centro_coordinacion_inmigracion_Canarias",
+                    "file": "2006_OrdenPRE_3108_Centro_coordinacion_inmigracion_Canarias.pdf"
+                },
+                {
+                    "title": "2008_OrdenPRE_2523_Centros_vigilancia_maritima_GC",
+                    "file": "2008_OrdenPRE_2523_Centros_vigilancia_maritima_GC.pdf"
+                },
+                {
+                    "title": "2013_OrdenINT_574_Especialidad_Trafico",
+                    "file": "2013_OrdenINT_574_Especialidad_Trafico.pdf"
+                },
+                {
+                    "title": "2020_OrdenPCM_509_Especialidades",
+                    "file": "2020_OrdenPCM_509_Especialidades.pdf"
+                },
+                {
+                    "title": "2020_RealDecreto_136_Presidencia_Gobierno",
+                    "file": "2020_RealDecreto_136_Presidencia_Gobierno.pdf"
+                }
+            ],
+            "subcategories": [
+                {
+                    "title": "\u00d3rdenes Generales y Normas Complementarias - (S\u00f3lo para socios UO)",
+                    "permissions": [
+                        "socio",
+                        "administrator"
+                    ],
+                    "files": [
+                        {
+                            "title": "1981_OG_55_Automovilismo",
+                            "file": "1981_OG_55_Automovilismo.pdf"
+                        },
+                        {
+                            "title": "1989_OG_85_Estudios_historicos",
+                            "file": "1989_OG_85_Estudios_historicos.pdf"
+                        },
+                        {
+                            "title": "1997_OG_33_Unidad_Especial_Intervencion_UEI",
+                            "file": "1997_OG_33_Unidad_Especial_Intervencion_UEI.pdf"
+                        },
+                        {
+                            "title": "1997_OG_36_Gabinete_Director_General",
+                            "file": "1997_OG_36_Gabinete_Director_General.pdf"
+                        },
+                        {
+                            "title": "1998_OG_Unidad_Accion_Rural_UAR",
+                            "file": "1998_OG_Unidad_Accion_Rural_UAR.pdf"
+                        },
+                        {
+                            "title": "2000_OG_3_Monta\u00f1a",
+                            "file": "2000_OG_3_Monta\u00f1a.pdf"
+                        },
+                        {
+                            "title": "2002_OG_3_Servicio_Proteccion_Seguridd_SEPROSE",
+                            "file": "2002_OG_3_Servicio_Proteccion_Seguridd_SEPROSE.pdf"
+                        },
+                        {
+                            "title": "2002_OG_4_Servicios_apoyo_(Armamento_y_Material_Movil)",
+                            "file": "2002_OG_4_Servicios_apoyo_(Armamento_y_Material_Movil).pdf"
+                        },
+                        {
+                            "title": "2002_OG_7_GATI_Grupos_Apoyo_Tecnologias_Informacion",
+                            "file": "2002_OG_7_GATI_Grupos_Apoyo_Tecnologias_Informacion.pdf"
+                        },
+                        {
+                            "title": "2002_OG_10_Servicio_Cinologico_y_Remonta",
+                            "file": "2002_OG_10_Servicio_Cinologico_y_Remonta.pdf"
+                        },
+                        {
+                            "title": "2002_OG_14_Ense\u00f1anza",
+                            "file": "2002_OG_14_Ense\u00f1anza.pdf"
+                        },
+                        {
+                            "title": "2002_OG_16_Seguridad_ciudadana",
+                            "file": "2002_OG_16_Seguridad_ciudadana.pdf"
+                        },
+                        {
+                            "title": "2002_OG_18_Equipos_lucha_inmigracion_clandestina",
+                            "file": "2002_OG_18_Equipos_lucha_inmigracion_clandestina.pdf"
+                        },
+                        {
+                            "title": "2005_OG_1_Gestion_economica",
+                            "file": "2005_OG_1_Gestion_economica.pdf"
+                        },
+                        {
+                            "title": "2005_OG_9_Equipos_delincuencia_organizada_ECO",
+                            "file": "2005_OG_9_Equipos_delincuencia_organizada_ECO.pdf"
+                        },
+                        {
+                            "title": "2006_OG_6_Estado_mayor",
+                            "file": "2006_OG_6_Estado_mayor.pdf"
+                        },
+                        {
+                            "title": "2006_OG_7_Psicologia",
+                            "file": "2006_OG_7_Psicologia.pdf"
+                        },
+                        {
+                            "title": "2007_OG_5_Intervencion_Armas_Explosivos",
+                            "file": "2007_OG_5_Intervencion_Armas_Explosivos.pdf"
+                        },
+                        {
+                            "title": "2007_OG_6_Accion_social",
+                            "file": "2007_OG_6_Accion_social.pdf"
+                        },
+                        {
+                            "title": "2008_OG_4_Policia_judicial",
+                            "file": "2008_OG_4_Policia_judicial.pdf"
+                        },
+                        {
+                            "title": "2008_OG_5_Actividades_subacuaticas_GEAS",
+                            "file": "2008_OG_5_Actividades_subacuaticas_GEAS.pdf"
+                        },
+                        {
+                            "title": "2008_OG_9_Desactivacion_explosivos_y_Defensa_NRBQ",
+                            "file": "2008_OG_9_Desactivacion_explosivos_y_Defensa_NRBQ.pdf"
+                        },
+                        {
+                            "title": "2008_OG_10_Informacion",
+                            "file": "2008_OG_10_Informacion.pdf"
+                        },
+                        {
+                            "title": "2011_OG_2_Fiscal_Fronteras_Maritimo",
+                            "file": "2011_OG_2_Fiscal_Fronteras_Maritimo.pdf"
+                        },
+                        {
+                            "title": "2011_OG_7_Asuntos_Internos",
+                            "file": "2011_OG_7_Asuntos_Internos.pdf"
+                        },
+                        {
+                            "title": "2011_OG_8_Seprona",
+                            "file": "2011_OG_8_Seprona.pdf"
+                        },
+                        {
+                            "title": "2012_OG_6_Servicio_Aereo",
+                            "file": "2012_OG_6_Servicio_Aereo.pdf"
+                        },
+                        {
+                            "title": "2014_OG_3__Agupacion_Reserva_y_Seguridad",
+                            "file": "2014_OG_3__Agupacion_Reserva_y_Seguridad.pdf"
+                        },
+                        {
+                            "title": "2014_OG_4_Agrupacion_Trafico",
+                            "file": "2014_OG_4_Agrupacion_Trafico.pdf"
+                        },
+                        {
+                            "title": "2015_OG_3_Asistencia_al_personal",
+                            "file": "2015_OG_3_Asistencia_al_personal.pdf"
+                        },
+                        {
+                            "title": "2015_OG_5_Unidades_adscritas_organismos_ajenos",
+                            "file": "2015_OG_5_Unidades_adscritas_organismos_ajenos.pdf"
+                        },
+                        {
+                            "title": "2015_OG_9_Servicios_tecnicos",
+                            "file": "2015_OG_9_Servicios_tecnicos.pdf"
+                        },
+                        {
+                            "title": "2018_OG_1_Sistema_Intervenci\u00f3n_Operativo_SIO",
+                            "file": "2018_OG_1_Sistema_Intervenci\u00f3n_Operativo_SIO.pdf"
+                        },
+                        {
+                            "title": "2019_Resolucion_14oct_Servidumbre_CEMFAS_DIM_Educacion_Fisica",
+                            "file": "2019_Resolucion_14oct_Servidumbre_CEMFAS_DIM_Educacion_Fisica.pdf"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "08 SITUACIONES ADMINISTRATIVAS Y EMPLEOS",
+            "permissions": [
+                "administrator",
+                "socio",
+                "no_socio"
+            ],
+            "files": [
+                {
+                    "title": "2017_RealDecreto_728_Situaciones_administrativas",
+                    "file": "2017_RealDecreto_728_Situaciones_administrativas.pdf"
+                },
+                {
+                    "title": "2018_OrdenPRA_215_Suboficial_Mayor_Cabo_Mayor_",
+                    "file": "2018_OrdenPRA_215_Suboficial_Mayor_Cabo_Mayor_.pdf"
+                }
+            ]
+        },
+        {
+            "title": "09 RETRIBUCIONES E INDEMNIZACIONES",
+            "permissions": [
+                "administrator",
+                "socio",
+                "no_socio"
+            ],
+            "files": [
+                {
+                    "title": "1971_Decreto_361_Indemnizacion_por_destino_en_determinados_lugares",
+                    "file": "1971_Decreto_361_Indemnizacion_por_destino_en_determinados_lugares.pdf"
+                },
+                {
+                    "title": "1984_OrdenINT_3_Zona_conflicitiva",
+                    "file": "1984_OrdenINT_3_Zona_conflicitiva.pdf"
+                },
+                {
+                    "title": "1984_RealDecreto_1781_Zona_conflictiva",
+                    "file": "1984_RealDecreto_1781_Zona_conflictiva.pdf"
+                },
+                {
+                    "title": "2002_RD_462_Indemnizaciones_razon_servicio",
+                    "file": "2002_RD_462_Indemnizaciones_razon_servicio.pdf"
+                },
+                {
+                    "title": "2005_OrdenINT_3144_(DEROGADA)_Residencias_del_Cuerpo",
+                    "file": "2005_OrdenINT_3144_(DEROGADA)_Residencias_del_Cuerpo.pdf"
+                },
+                {
+                    "title": "2005_RealDecreto_950_Retribuciones_FCSE",
+                    "file": "2005_RealDecreto_950_Retribuciones_FCSE.pdf"
+                },
+                {
+                    "title": "2005_RealDecreto_1314_Retribuciones_Fuerzas_Armadas_FAS",
+                    "file": "2005_RealDecreto_1314_Retribuciones_Fuerzas_Armadas_FAS.pdf"
+                },
+                {
+                    "title": "2007_OrdenINT_1390_Indeminzaciones_operaciones_extranjero",
+                    "file": "2007_OrdenINT_1390_Indeminzaciones_operaciones_extranjero.pdf"
+                },
+                {
+                    "title": "2015_OrdenDEF_7_Indemnizacion_FAS_misiones_internacionales",
+                    "file": "2015_OrdenDEF_7_Indemnizacion_FAS_misiones_internacionales.pdf"
+                },
+                {
+                    "title": "2018_Resolucion_09feb_comisiones_servicio_indemnizables",
+                    "file": "2018_Resolucion_09feb_comisiones_servicio_indemnizables.pdf"
+                }
+            ],
+            "subcategories": [
+                {
+                    "title": "\u00d3rdenes Generales y Normas Complementarias (S\u00f3lo socios de la UO)",
+                    "permissions": [
+                        "administrator",
+                        "socio"
+                    ],
+                    "files": [
+                        {
+                            "title": "2006_OG_4_Indemnizaciones_por_razon_de_servicio",
+                            "file": "2006_OG_4_Indemnizaciones_por_razon_de_servicio.pdf"
+                        },
+                        {
+                            "title": "2010_Resolucion_25may_Nominas_funcionarios",
+                            "file": "2010_Resolucion_25may_Nominas_funcionarios.pdf"
+                        },
+                        {
+                            "title": "2014_OG_12_(DEROGADA)_Incentivos_al_rendimiento_(productividad)",
+                            "file": "2014_OG_12_(DEROGADA)_Incentivos_al_rendimiento_(productividad).pdf"
+                        },
+                        {
+                            "title": "2020_Presentacion_de_Actualizaci\u00f3n_sistema_Incentivos_al_Rendimiento_G_1",
+                            "file": "2020_Presentacion_de_Actualizaci\u00f3n_sistema_Incentivos_al_Rendimiento_G_1.pdf"
+                        },
+                        {
+                            "title": "2021_OG_4_Incentivos_al_rendimiento_(productividad)",
+                            "file": "2021_OG_4_Incentivos_al_rendimiento_(productividad).pdf"
+                        },
+                        {
+                            "title": "2021_Resumen_MODIFICACIONES_OG_Jornada",
+                            "file": "2021_Resumen_MODIFICACIONES_OG_Jornada.pdf"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "10 JORNADA Y HORARIO (S\u00f3lo para socios de UO)",
+            "permissions": [
+                "administrator",
+                "socio"
+            ],
+            "files": [
+                {
+                    "title": "2014_CriteriosAplicacionOG_11_Jornada_y_horario",
+                    "file": "2014_CriteriosAplicacionOG_11_Jornada_y_horario.pdf"
+                },
+                {
+                    "title": "2014_OG_11_Jornada_y_horario_(Texto_consolidadado_01mar2021)",
+                    "file": "2014_OG_11_Jornada_y_horario_(Texto_consolidadado_01mar2021).pdf"
+                },
+                {
+                    "title": "2019_Resolucion_28feb_Jornada_funcionarios",
+                    "file": "2019_Resolucion_28feb_Jornada_funcionarios.pdf"
+                },
+                {
+                    "title": "2021_-_Resumen_de_Sucesiones_y_Sustituciones",
+                    "file": "2021_-_Resumen_de_Sucesiones_y_Sustituciones.pdf"
+                }
+            ]
+        },
+        {
+            "title": "11 VACACIONES, PERMISOS Y LICENCIAS (S\u00f3lo para socios de UO)",
+            "permissions": [
+                "administrator",
+                "socio"
+            ],
+            "files": [
+                {
+                    "title": "2016_OficioMaper_19feb_Permiso_asistencia_a_examenes_oficiales",
+                    "file": "2016_OficioMaper_19feb_Permiso_asistencia_a_examenes_oficiales.pdf"
+                },
+                {
+                    "title": "2016_OG_1_(Consolidado)_vacaciones_permisos_licencias",
+                    "file": "2016_OG_1_(Consolidado)_vacaciones_permisos_licencias.pdf"
+                },
+                {
+                    "title": "2019_Gia_de_conciliacion_Guardia_Civil",
+                    "file": "2019_Gia_de_conciliacion_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "2019_Instruccion_2_(derogada)_nacimiento_paternidad_lactancia",
+                    "file": "2019_Instruccion_2_(derogada)_nacimiento_paternidad_lactancia.pdf"
+                },
+                {
+                    "title": "2020_03_20_Criterios_tratamiento_vacaciones_y_permisos_estado_",
+                    "file": "2020_03_20_Criterios_tratamiento_vacaciones_y_permisos_estado_.pdf"
+                },
+                {
+                    "title": "2020_Resolucion_27abr__Recuperacion_vacaciones_y_permisos__por_COVID-19",
+                    "file": "2020_Resolucion_27abr__Recuperacion_vacaciones_y_permisos__por_COVID-19.pdf"
+                }
+            ]
+        },
+        {
+            "title": "12 UNIFORMIDAD, DISTINTIVOS Y CONDECORACIONES",
+            "permissions": [
+                "administrator",
+                "socio",
+                "no_socio"
+            ],
+            "files": [
+                {
+                    "title": "1964_Ley_5_Condecoraciones_policiales",
+                    "file": "1964_Ley_5_Condecoraciones_policiales.pdf"
+                },
+                {
+                    "title": "1976_Ley_19_Creacion_Orden_Merito_Guardia_Civil",
+                    "file": "1976_Ley_19_Creacion_Orden_Merito_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "2002_RealDecreto_682_Cruz_Constancia_Guardia_Civil",
+                    "file": "2002_RealDecreto_682_Cruz_Constancia_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "2003_OrdenDEF_3594_Tramitacion_merito_militar_naval_aeronautico",
+                    "file": "2003_OrdenDEF_3594_Tramitacion_merito_militar_naval_aeronautico.pdf"
+                },
+                {
+                    "title": "2003_RealDecreto_1040_Recompensas_militares",
+                    "file": "2003_RealDecreto_1040_Recompensas_militares.pdf"
+                },
+                {
+                    "title": "2010_OrdenINT_2008_Orden_Merito_Guardia_Civil",
+                    "file": "2010_OrdenINT_2008_Orden_Merito_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "2014_OrdenINT_77_(ANULADA)_Uniformidad_GC",
+                    "file": "2014_OrdenINT_77_(ANULADA)_Uniformidad_GC.pdf"
+                },
+                {
+                    "title": "2020_RealDecreto_725_Real_y_Militar_Orden_San_Hermenegildo",
+                    "file": "2020_RealDecreto_725_Real_y_Militar_Orden_San_Hermenegildo.pdf"
+                },
+                {
+                    "title": "Proyecto_Orden_normas_uniformidad_Guardia_Civil",
+                    "file": "Proyecto_Orden_normas_uniformidad_Guardia_Civil.pdf"
+                }
+            ],
+            "subcategories": [
+                {
+                    "title": "\u00d3rdenes Generales y Normas Complementarias (S\u00f3lo para socios de UO)",
+                    "permissions": [
+                        "administrator",
+                        "socio"
+                    ],
+                    "files": [
+                        {
+                            "title": "2010_OG_12_Uniformidad_Guardia_Civil",
+                            "file": "2010_OG_12_Uniformidad_Guardia_Civil.pdf"
+                        },
+                        {
+                            "title": "2015_OG__4_Uso_de_distintivos_Guardia_Civil",
+                            "file": "2015_OG__4_Uso_de_distintivos_Guardia_Civil.pdf"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "13 RIESGOS LABORALES",
+            "permissions": [
+                "administrator",
+                "socio",
+                "no_socio"
+            ],
+            "files": [
+                {
+                    "title": "1995_Ley_31_Prevencion_Riesgos_Laborales",
+                    "file": "1995_Ley_31_Prevencion_Riesgos_Laborales.pdf"
+                },
+                {
+                    "title": "1997_RealDecreto_39_Reglamento_Servicios_Prevencion",
+                    "file": "1997_RealDecreto_39_Reglamento_Servicios_Prevencion.pdf"
+                },
+                {
+                    "title": "2004_RealDecreto_171_Coordinacion_actividades_empresariales",
+                    "file": "2004_RealDecreto_171_Coordinacion_actividades_empresariales.pdf"
+                },
+                {
+                    "title": "2005_RealDecreto_179_Prevencion_Riesgos_Guardia_Civil",
+                    "file": "2005_RealDecreto_179_Prevencion_Riesgos_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "2006_Orden_INT_724_Organos_Prevencion_Guardia_Civil",
+                    "file": "2006_Orden_INT_724_Organos_Prevencion_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "2010_RealDecreto_67_Prevencion_Riesgos_funcionarios",
+                    "file": "2010_RealDecreto_67_Prevencion_Riesgos_funcionarios.pdf"
+                }
+            ],
+            "subcategories": [
+                {
+                    "title": "\u00d3rdenes Generales y Normativa Complementaria (S\u00f3lo para socios UO)",
+                    "permissions": [
+                        "administrator",
+                        "socio"
+                    ],
+                    "files": [
+                        {
+                            "title": "2010_Manual_Prevencion_Riesgos_Guardia_Civil",
+                            "file": "2010_Manual_Prevencion_Riesgos_Guardia_Civil.pdf"
+                        },
+                        {
+                            "title": "2021_Convenio_Inspecci\u00f3n_de_Trabajo_y_Seguridad_Social",
+                            "file": "2021_Convenio_Inspecci\u00f3n_de_Trabajo_y_Seguridad_Social.pdf"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "14 INCAPACIDAD TEMPORAL E INSUFICIENCIA CONDICIONES",
+            "permissions": [
+                "administrator",
+                "socio",
+                "no_socio"
+            ],
+            "files": [
+                {
+                    "title": "1999_RealDecreto_1971_Reconocimiento_minusvalia",
+                    "file": "1999_RealDecreto_1971_Reconocimiento_minusvalia.pdf"
+                },
+                {
+                    "title": "2001_RealDecreto_944_Determinacion_aptitud_psicofisica_FAS",
+                    "file": "2001_RealDecreto_944_Determinacion_aptitud_psicofisica_FAS.pdf"
+                },
+                {
+                    "title": "2003_OrdenPRE_2373_Organos_medico_periciales_Sanidad_Militar",
+                    "file": "2003_OrdenPRE_2373_Organos_medico_periciales_Sanidad_Militar.pdf"
+                },
+                {
+                    "title": "2010_RealDecreto_170_Centro_reconocimiento_conductores",
+                    "file": "2010_RealDecreto_170_Centro_reconocimiento_conductores.pdf"
+                }
+            ],
+            "subcategories": [
+                {
+                    "title": "\u00d3rdenes Generales y Normativa complementaria (S\u00f3lo para socios de UO)",
+                    "permissions": [
+                        "administrator",
+                        "socio"
+                    ],
+                    "files": [
+                        {
+                            "title": "2007_OG_11_Bajas_por_motivo_de_salud",
+                            "file": "2007_OG_11_Bajas_por_motivo_de_salud.pdf"
+                        },
+                        {
+                            "title": "2008_Instruccion_21_Reestructuracion_organos_medicos_periciales",
+                            "file": "2008_Instruccion_21_Reestructuracion_organos_medicos_periciales.pdf"
+                        },
+                        {
+                            "title": "2014_OG_9_Vacunaciones_personal_GC",
+                            "file": "2014_OG_9_Vacunaciones_personal_GC.pdf"
+                        },
+                        {
+                            "title": "2018_Instruccion_1_Inasistencias_(indisposiciones)",
+                            "file": "2018_Instruccion_1_Inasistencias_(indisposiciones).pdf"
+                        },
+                        {
+                            "title": "2018_OG_6_Protocolo_situaciones_psiquiatricas_y_anomalas",
+                            "file": "2018_OG_6_Protocolo_situaciones_psiquiatricas_y_anomalas.pdf"
+                        },
+                        {
+                            "title": "2021_Parte_de_baja_editable",
+                            "file": "2021_Parte_de_baja_editable.pdf"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "15 ISFAS, CLASES PASIVAS Y SEGURIDAD SOCIAL",
+            "permissions": [
+                "administrator",
+                "socio",
+                "no_socio"
+            ],
+            "files": [
+                {
+                    "title": "1987_RealDecretoLegislativo_670_Clases_Pasivas",
+                    "file": "1987_RealDecretoLegislativo_670_Clases_Pasivas.pdf"
+                },
+                {
+                    "title": "2000_RealDecretoLegislativo_1_Ley_ISFAS",
+                    "file": "2000_RealDecretoLegislativo_1_Ley_ISFAS.pdf"
+                },
+                {
+                    "title": "2007_RealDecreto_1726_Reglamento_ISFAS",
+                    "file": "2007_RealDecreto_1726_Reglamento_ISFAS.pdf"
+                },
+                {
+                    "title": "2010_RealDecretoLey_13_Funcionarios_pasan_a_seguridad_social",
+                    "file": "2010_RealDecretoLey_13_Funcionarios_pasan_a_seguridad_social.pdf"
+                },
+                {
+                    "title": "2015_RealDecreto_1087_Inclusion_FCSE_Seguridad_Social",
+                    "file": "2015_RealDecreto_1087_Inclusion_FCSE_Seguridad_Social.pdf"
+                }
+            ],
+            "subcategories": [
+                {
+                    "title": "\u00d3rdenes Generales y Normativa Complementaria (S\u00f3lo para socios de UO)",
+                    "permissions": [
+                        "administrator",
+                        "socio"
+                    ],
+                    "files": [
+                        {
+                            "title": "2019_Resolucion_04dic_Concierto_ISFAS",
+                            "file": "2019_Resolucion_04dic_Concierto_ISFAS.pdf"
+                        },
+                        {
+                            "title": "DeclaracionGrRiesgoCovid19",
+                            "file": "DeclaracionGrRiesgoCovid19.pdf"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "16 CONSEJO DE LA GUARDIA CIVIL Y ASOCIACIONES (S\u00f3lo para socios de UO)",
+            "permissions": [
+                "administrator",
+                "socio"
+            ],
+            "files": [
+                {
+                    "title": "2002_LeyOrganica_1_Derecho_asociacion",
+                    "file": "2002_LeyOrganica_1_Derecho_asociacion.pdf"
+                },
+                {
+                    "title": "2007_OG_13__Desarrollo_derechos_asociaciones",
+                    "file": "2007_OG_13__Desarrollo_derechos_asociaciones.pdf"
+                },
+                {
+                    "title": "2007_OrdenINT_3939_Registro_Asociaciones_Guardia_Civil",
+                    "file": "2007_OrdenINT_3939_Registro_Asociaciones_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "2008_InstruccionSES_3_Inscripcion_registro_asociaciones",
+                    "file": "2008_InstruccionSES_3_Inscripcion_registro_asociaciones.pdf"
+                },
+                {
+                    "title": "2008_RealDecreto_1963_Regimen_electoral_Consejo_Guardia_Civil",
+                    "file": "2008_RealDecreto_1963_Regimen_electoral_Consejo_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "2009_Resoluci\u00f3n_30nov_Reuniones_y_locales_asociaciones",
+                    "file": "2009_Resoluci\u00f3n_30nov_Reuniones_y_locales_asociaciones.pdf"
+                },
+                {
+                    "title": "2010_RealDecreto_751_Reglamento_Consejo_Guardia_Civil",
+                    "file": "2010_RealDecreto_751_Reglamento_Consejo_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "2013_OrdenINT_1715_Concesion_subvencioes_asociaciones_Guardia_Civil",
+                    "file": "2013_OrdenINT_1715_Concesion_subvencioes_asociaciones_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "2015_Instruccion_1_Permisos_y_tiempo_asociativo",
+                    "file": "2015_Instruccion_1_Permisos_y_tiempo_asociativo.pdf"
+                },
+                {
+                    "title": "2015_OG_10_(ANULADA_TS)_Derechos_Representantes_Asociaciones",
+                    "file": "2015_OG_10_(ANULADA_TS)_Derechos_Representantes_Asociaciones.pdf"
+                },
+                {
+                    "title": "2015_RealDecreto_949_Registro_Nacional_Asociaciones",
+                    "file": "2015_RealDecreto_949_Registro_Nacional_Asociaciones.pdf"
+                }
+            ]
+        },
+        {
+            "title": "17 REGIMEN DISCIPLINARIO",
+            "permissions": [
+                "administrator",
+                "socio",
+                "no_socio"
+            ],
+            "files": [
+                {
+                    "title": "1987_Ley_Org\u00e1nica_4,_de_15_de_julio,_de_la_Competencia_y_Organizaci\u00f3n_de_la_Jurisdicci\u00f3n_Militar",
+                    "file": "1987_Ley_Org\u00e1nica_4,_de_15_de_julio,_de_la_Competencia_y_Organizaci\u00f3n_de_la_Jurisdicci\u00f3n_Militar.pdf"
+                },
+                {
+                    "title": "1989_LeyOrganica_2_Procesal_Militar",
+                    "file": "1989_LeyOrganica_2_Procesal_Militar.pdf"
+                },
+                {
+                    "title": "1998_Ley_44,_de_15_de_diciembre,_de_Planta_y_Organizaci\u00f3n_Territorial_de_la_Jurisdicci\u00f3n_Militar",
+                    "file": "1998_Ley_44,_de_15_de_diciembre,_de_Planta_y_Organizaci\u00f3n_Territorial_de_la_Jurisdicci\u00f3n_Militar.pdf"
+                },
+                {
+                    "title": "2007_LeyOrganica_12_Regimen_Disciplinario_Guardia_Civil",
+                    "file": "2007_LeyOrganica_12_Regimen_Disciplinario_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "2014_LeyOrganica_8_Regimen_Disciplinario_FAS",
+                    "file": "2014_LeyOrganica_8_Regimen_Disciplinario_FAS.pdf"
+                },
+                {
+                    "title": "2015_LeyOrganica_14_Codigo_Penal_Militar",
+                    "file": "2015_LeyOrganica_14_Codigo_Penal_Militar.pdf"
+                },
+                {
+                    "title": "2017_RealDecreto_232_Cancelacion_notas_desfavorables",
+                    "file": "2017_RealDecreto_232_Cancelacion_notas_desfavorables.pdf"
+                }
+            ],
+            "subcategories": [
+                {
+                    "title": "Manuales de Derecho Disciplinario (S\u00f3lo para socios de UO)",
+                    "permissions": [
+                        "administrator",
+                        "socio"
+                    ],
+                    "files": [
+                        {
+                            "title": "Manual_b\u00e1sico_de_R\u00e9gimen_Disciplinario_de_las_Fuerzas_Armadas_2016",
+                            "file": "Manual_b\u00e1sico_de_R\u00e9gimen_Disciplinario_de_las_Fuerzas_Armadas_2016.pdf"
+                        },
+                        {
+                            "title": "MANUAL+BASICO+DE+PROCEDIMIENTOS+Y+TRIBUNALES+MILITARES",
+                            "file": "MANUAL+BASICO+DE+PROCEDIMIENTOS+Y+TRIBUNALES+MILITARES.pdf"
+                        },
+                        {
+                            "title": "manual_basico_regimen_disciplinario_guardia_civil",
+                            "file": "manual_basico_regimen_disciplinario_guardia_civil.pdf"
+                        },
+                        {
+                            "title": "regimen_disciplinario_guardia_civil",
+                            "file": "regimen_disciplinario_guardia_civil.pdf"
+                        }
+                    ]
+                },
+                {
+                    "title": "Normativa Complementaria (S\u00f3lo para socios UO)",
+                    "permissions": [
+                        "administrator",
+                        "socio"
+                    ],
+                    "files": [
+                        {
+                            "title": "1997_OG_11_Consumo_drogas",
+                            "file": "1997_OG_11_Consumo_drogas.pdf"
+                        },
+                        {
+                            "title": "13_2019_2_Proyecto_RD_aptitud_psicofisica_Guardia_Civil",
+                            "file": "13_2019_2_Proyecto_RD_aptitud_psicofisica_Guardia_Civil.pdf"
+                        },
+                        {
+                            "title": "18_2019_Memoria_Orden_deteccion_consumo_drogas_personal_Guardia_Civil",
+                            "file": "18_2019_Memoria_Orden_deteccion_consumo_drogas_personal_Guardia_Civil.pdf"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "18 IGUALDAD Y ACOSO",
+            "permissions": [
+                "administrator",
+                "socio",
+                "no_socio"
+            ],
+            "files": [
+                {
+                    "title": "2007_LeyOrganica_3_Igualdad_mujeres_y_hombres",
+                    "file": "2007_LeyOrganica_3_Igualdad_mujeres_y_hombres.pdf"
+                },
+                {
+                    "title": "2019_OrdenDEF_111_Observatorio_Igualdad_FAS",
+                    "file": "2019_OrdenDEF_111_Observatorio_Igualdad_FAS.pdf"
+                },
+                {
+                    "title": "2019_RealDecreto_259_Unidades_Igualdad_Ministerios",
+                    "file": "2019_RealDecreto_259_Unidades_Igualdad_Ministerios.pdf"
+                },
+                {
+                    "title": "2019_RealDecretoLey_6_Garantia_igualdad_trato",
+                    "file": "2019_RealDecretoLey_6_Garantia_igualdad_trato.pdf"
+                },
+                {
+                    "title": "2021_INSTRUCCION_2_-_SES_REFORZAMIENTO_MEDIDAS_EN_VIOLENCIA_DE_GENERO",
+                    "file": "2021_INSTRUCCION_2_-_SES_REFORZAMIENTO_MEDIDAS_EN_VIOLENCIA_DE_GENERO.PDF"
+                }
+            ],
+            "subcategories": [
+                {
+                    "title": "\u00d3rdenes Generales, Protocolos e Instrucciones (S\u00f3lo para socios UO)",
+                    "permissions": [
+                        "administrator",
+                        "socio"
+                    ],
+                    "files": [
+                        {
+                            "title": "2011_Protocolo_Acoso_laboral_personal_civil_en_GC",
+                            "file": "2011_Protocolo_Acoso_laboral_personal_civil_en_GC.pdf"
+                        },
+                        {
+                            "title": "2014_Resolucion_10jul_Comite_igualdad_Guardia_Civil",
+                            "file": "2014_Resolucion_10jul_Comite_igualdad_Guardia_Civil.pdf"
+                        },
+                        {
+                            "title": "2017_Guia_lenguaje_inclusivo_Guardia_Civil",
+                            "file": "2017_Guia_lenguaje_inclusivo_Guardia_Civil.pdf"
+                        },
+                        {
+                            "title": "2019_Protocolo_Acoso_laboral_Guardia_Civil",
+                            "file": "2019_Protocolo_Acoso_laboral_Guardia_Civil.pdf"
+                        },
+                        {
+                            "title": "2019_Protocolo_Acoso_sexual_y_por_razon_sexo_Guardia_Civil",
+                            "file": "2019_Protocolo_Acoso_sexual_y_por_razon_sexo_Guardia_Civil.pdf"
+                        },
+                        {
+                            "title": "2019_Resolucion_11jul_I_Plan_Igualdad_Guardia_Civil",
+                            "file": "2019_Resolucion_11jul_I_Plan_Igualdad_Guardia_Civil.pdf"
+                        },
+                        {
+                            "title": "2020_30nov_III_Plan_Igualdad_AGE",
+                            "file": "2020_30nov_III_Plan_Igualdad_AGE.pdf"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "19 PABELLONES, RESIDENCIA Y SALIDA EXTRANJERO (S\u00f3lo para socios UO)",
+            "permissions": [
+                "administrator",
+                "socio"
+            ],
+            "files": [
+                {
+                    "title": "2005_OG_11_Residencias_del_Cuerpo",
+                    "file": "2005_OG_11_Residencias_del_Cuerpo.pdf"
+                },
+                {
+                    "title": "2005_OG_19_Pabellones_(Texto_consolidado)",
+                    "file": "2005_OG_19_Pabellones_(Texto_consolidado).pdf"
+                },
+                {
+                    "title": "2013_Criteros_habitabilidad_pabellones",
+                    "file": "2013_Criteros_habitabilidad_pabellones.pdf"
+                },
+                {
+                    "title": "2016_Listado_residencias_plaza",
+                    "file": "2016_Listado_residencias_plaza.pdf"
+                },
+                {
+                    "title": "2018_RealDecreto_274_Residencia_desplazamientos_localizacion",
+                    "file": "2018_RealDecreto_274_Residencia_desplazamientos_localizacion.pdf"
+                },
+                {
+                    "title": "2021_OrdenINT_126_INT_Residencias_Cuerpo",
+                    "file": "2021_OrdenINT_126_INT_Residencias_Cuerpo.pdf"
+                },
+                {
+                    "title": "MANUAL_RESIDENCIAS_G",
+                    "file": "MANUAL_RESIDENCIAS_G.C_2020.pdf"
+                },
+                {
+                    "title": "RML_AIRE",
+                    "file": "RML_AIRE.pdf"
+                },
+                {
+                    "title": "RML_ARMADA",
+                    "file": "RML_ARMADA.pdf"
+                },
+                {
+                    "title": "RML_EJERCITO_TIERRA",
+                    "file": "RML_EJERCITO_TIERRA.pdf"
+                }
+            ]
+        },
+        {
+            "title": "20 COMUNICACION Y PRENSA (S\u00f3lo para socios de UO)",
+            "permissions": [
+                "administrator",
+                "socio"
+            ],
+            "files": [
+                {
+                    "title": "1998_OG_8_Oficinas_Perifericas_Comunicacion",
+                    "file": "1998_OG_8_Oficinas_Perifericas_Comunicacion.pdf"
+                },
+                {
+                    "title": "2011_OG_10_Consejo_redaccion_Intranet_Internet",
+                    "file": "2011_OG_10_Consejo_redaccion_Intranet_Internet.pdf"
+                }
+            ]
+        },
+        {
+            "title": "21 INCOMPATIBILIDADES",
+            "permissions": [
+                "administrator",
+                "socio",
+                "no_socio"
+            ],
+            "files": [
+                {
+                    "title": "1984_Ley_53_Incompatibilidades_funcionarios",
+                    "file": "1984_Ley_53_Incompatibilidades_funcionarios.pdf"
+                },
+                {
+                    "title": "1985_Real_Decreto_598,_sobre_incompatibilidades_personal_AGE",
+                    "file": "1985_Real_Decreto_598,_sobre_incompatibilidades_personal_AGE.pdf"
+                },
+                {
+                    "title": "1986_RealDecreto_517_Incompatibilidades_personal_militar",
+                    "file": "1986_RealDecreto_517_Incompatibilidades_personal_militar.pdf"
+                }
+            ],
+            "subcategories": [
+                {
+                    "title": "Normas complementarias (S\u00f3lo para socios de UO)",
+                    "permissions": [
+                        "administrator",
+                        "socio"
+                    ],
+                    "files": [
+                        {
+                            "title": "2011_Resolucion_20dic_Reduccion_complemento_especifico_funcionarios",
+                            "file": "2011_Resolucion_20dic_Reduccion_complemento_especifico_funcionarios.pdf"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "22 ESTATUTO MILITAR, HONORES  y PROTOCOLO",
+            "permissions": [
+                "administrator",
+                "socio",
+                "no_socio"
+            ],
+            "files": [
+                {
+                    "title": "2007_Ley_39_Carrera_Militar",
+                    "file": "2007_Ley_39_Carrera_Militar.pdf"
+                },
+                {
+                    "title": "2009_RealDecreto_96_Reales_Ordenanzas_FAS",
+                    "file": "2009_RealDecreto_96_Reales_Ordenanzas_FAS.pdf"
+                },
+                {
+                    "title": "2010_RealDecreto_684_Reglamento_Honores_Militares",
+                    "file": "2010_RealDecreto_684_Reglamento_Honores_Militares.pdf"
+                },
+                {
+                    "title": "2010_RealDecreto_1438_Misiones_militares_Guardia_Civil",
+                    "file": "2010_RealDecreto_1438_Misiones_militares_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "2012_OrdenPRE_1983_Aplicacion_Guardia_Civil_diversas_normas_militares",
+                    "file": "2012_OrdenPRE_1983_Aplicacion_Guardia_Civil_diversas_normas_militares.pdf"
+                },
+                {
+                    "title": "2021_OrdenPCM_163_voto_personal_misiones_extranjero",
+                    "file": "2021_OrdenPCM_163_voto_personal_misiones_extranjero.pdf"
+                }
+            ],
+            "subcategories": [
+                {
+                    "title": "Normas Complementarias (S\u00f3lo para socios de UO)",
+                    "permissions": [
+                        "administrator",
+                        "socio"
+                    ],
+                    "files": [
+                        {
+                            "title": "1998_(PROTOCOLO)_OrdenComunicada_1_Organizacion_actos_oficiales_GC",
+                            "file": "1998_(PROTOCOLO)_OrdenComunicada_1_Organizacion_actos_oficiales_GC.pdf"
+                        },
+                        {
+                            "title": "2005_RE6-002_Reglamento_orden_cerrado_Ejercito_Tierra",
+                            "file": "2005_RE6-002_Reglamento_orden_cerrado_Ejercito_Tierra.pdf"
+                        },
+                        {
+                            "title": "2012_OG_10_Honores_Militares_Guardia_Civil",
+                            "file": "2012_OG_10_Honores_Militares_Guardia_Civil.pdf"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "23 ORGANIZACION DE LA GUARDIA CIVIL",
+            "permissions": [
+                "administrator",
+                "socio",
+                "no_socio"
+            ],
+            "files": [
+                {
+                    "title": "1993_RealDecreto_854_Consejo_Superior_Guardia_Civil",
+                    "file": "1993_RealDecreto_854_Consejo_Superior_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "1997_RealDecreto_367_Organizacion_periferica_Guardia_Civil",
+                    "file": "1997_RealDecreto_367_Organizacion_periferica_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "2013_OrdenPRE_422_Servicios_centrales_Guardia_Civil",
+                    "file": "2013_OrdenPRE_422_Servicios_centrales_Guardia_Civil.pdf"
+                },
+                {
+                    "title": "2020_RealDecreto_734_Estructura_organica_Ministerio_Interior",
+                    "file": "2020_RealDecreto_734_Estructura_organica_Ministerio_Interior.pdf"
+                }
+            ],
+            "subcategories": [
+                {
+                    "title": "\u00d3rdenes Generales y Normativa Complementaria (S\u00f3lo para socios de UO)",
+                    "permissions": [
+                        "administrator",
+                        "socio"
+                    ],
+                    "files": [
+                        {
+                            "title": "1998_OG_22_Organizacion_Puestos",
+                            "file": "1998_OG_22_Organizacion_Puestos.pdf"
+                        },
+                        {
+                            "title": "1998_OG_23_Organizacion_Zonas",
+                            "file": "1998_OG_23_Organizacion_Zonas.pdf"
+                        },
+                        {
+                            "title": "1998_Orden_8sep_Mando_demarcacion_Compa\u00f1ias_y_Puestos",
+                            "file": "1998_Orden_8sep_Mando_demarcacion_Compa\u00f1ias_y_Puestos.pdf"
+                        },
+                        {
+                            "title": "2000_OG_19_Organizacion_Comandancias",
+                            "file": "2000_OG_19_Organizacion_Comandancias.pdf"
+                        },
+                        {
+                            "title": "2000_OG__1_Organizacion_Compa\u00f1ias",
+                            "file": "2000_OG__1_Organizacion_Compa\u00f1ias.pdf"
+                        },
+                        {
+                            "title": "2012_Circular_2_Ejercicio_mando_Comandante_Puesto",
+                            "file": "2012_Circular_2_Ejercicio_mando_Comandante_Puesto.pdf"
+                        },
+                        {
+                            "title": "2012_OG_9_Mando_disciplina_y_regimen_interior",
+                            "file": "2012_OG_9_Mando_disciplina_y_regimen_interior.pdf"
+                        },
+                        {
+                            "title": "2021_Insrtruccion_10feb_modificacion_estructura_DGGC",
+                            "file": "2021_Insrtruccion_10feb_modificacion_estructura_DGGC.pdf"
+                        },
+                        {
+                            "title": "2021_Instruccion_2_DEL_MOPS_SOBRE_USECICS",
+                            "file": "2021_Instruccion_2_DEL_MOPS_SOBRE_USECICS.pdf"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "24 MANUALES, TRATADOS, LIBROS (S\u00f3lo para socios de UO)",
+            "permissions": [
+                "administrator",
+                "socio"
+            ],
+            "files": [
+                {
+                    "title": "BLACK__BLOC__Manual_manifestaciones",
+                    "file": "BLACK__BLOC__Manual_manifestaciones.pdf"
+                },
+                {
+                    "title": "Codigo_Penal_con_Jurisprudencia_Sistematizada",
+                    "file": "Codigo_Penal_con_Jurisprudencia_Sistematizada.pdf"
+                },
+                {
+                    "title": "DERECHO_ADMINISTRATIVO_Y_DERECHO_P\u00daBLICO",
+                    "file": "DERECHO_ADMINISTRATIVO_Y_DERECHO_P\u00daBLICO.pdf"
+                },
+                {
+                    "title": "GUIA_OPE_LUCHA_CONTRA_COMERCIO_ILICITO_2020_OCT",
+                    "file": "GUIA_OPE_LUCHA_CONTRA_COMERCIO_ILICITO_2020_OCT.pdf"
+                },
+                {
+                    "title": "Intentos_de_suicidio_-_ACTUACI\u00d3N",
+                    "file": "Intentos_de_suicidio_-_ACTUACI\u00d3N.pdf"
+                },
+                {
+                    "title": "Pendiente_-_Libro_FALLECIDOS_GUARDIA_CIVIL",
+                    "file": "Pendiente_-_Libro_FALLECIDOS_GUARDIA_CIVIL.pdf"
+                },
+                {
+                    "title": "Prontuario_de_Dcho_administrativo",
+                    "file": "Prontuario_de_Dcho_administrativo.pdf"
+                }
+            ],
+            "subcategories": [
+                {
+                    "title": "LIBROS DE INTERES",
+                    "permissions": [
+                        "administrator",
+                        "socio"
+                    ],
+                    "files": [
+                        {
+                            "title": "DE_FELIPE_V_A_FELIPE_VI",
+                            "file": "DE_FELIPE_V_A_FELIPE_VI.pdf"
+                        },
+                        {
+                            "title": "Desde_el_corazon_del_CESID",
+                            "file": "Desde_el_corazon_del_CESID.pdf.pdf"
+                        },
+                        {
+                            "title": "El_primer_combate_del_dia_D",
+                            "file": "El_primer_combate_del_dia_D.pdf"
+                        },
+                        {
+                            "title": "ETA_DE_PRINCIPIO_A_FIN",
+                            "file": "ETA_DE_PRINCIPIO_A_FIN.pdf.pdf"
+                        },
+                        {
+                            "title": "Felipe_VI_-_Un_Rey_en_la_adversidad",
+                            "file": "Felipe_VI_-_Un_Rey_en_la_adversidad.pdf"
+                        },
+                        {
+                            "title": "Jose_Calvo_Poyato_-_El_Gran_Capitan_(novela_hist\u00f3rica)",
+                            "file": "Jose_Calvo_Poyato_-_El_Gran_Capitan_(novela_hist\u00f3rica).pdf"
+                        },
+                        {
+                            "title": "La_fiel_infanteria",
+                            "file": "La_fiel_infanteria.pdf"
+                        },
+                        {
+                            "title": "La_historia_de_ETA",
+                            "file": "La_historia_de_ETA.pdf.pdf"
+                        },
+                        {
+                            "title": "Libro_historia_de_un_desaf\u00edo",
+                            "file": "Libro_historia_de_un_desaf\u00edo._Coronel_Corvi.pdf"
+                        },
+                        {
+                            "title": "Linea-de-fuego-Arturo-Perez-Reverte",
+                            "file": "Linea-de-fuego-Arturo-Perez-Reverte.pdf"
+                        },
+                        {
+                            "title": "Los_ninos_de_Lemoniz",
+                            "file": "Los_ninos_de_Lemoniz.pdf.pdf"
+                        },
+                        {
+                            "title": "Operacion_Baluarte",
+                            "file": "Operacion_Baluarte.pdf"
+                        },
+                        {
+                            "title": "Revista_-_Tropas_de_Monta\u00f1a",
+                            "file": "Revista_-_Tropas_de_Monta\u00f1a.pdf"
+                        },
+                        {
+                            "title": "Sangre,_Sudor_y_Paz",
+                            "file": "Sangre,_Sudor_y_Paz._La_Guardia_Civil_contra_ETA.pdf"
+                        },
+                        {
+                            "title": "Sereno_en_el_peligro",
+                            "file": "Sereno_en_el_peligro.pdf"
+                        },
+                        {
+                            "title": "Tercios_del_mar_-_Magdalena_de_Pazzis_Pi_Corrales",
+                            "file": "Tercios_del_mar_-_Magdalena_de_Pazzis_Pi_Corrales.pdf"
+                        },
+                        {
+                            "title": "Vidas_rotas",
+                            "file": "Vidas_rotas.pdf.pdf"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "25 SEGURIDAD ARMAS",
+            "permissions": [
+                "administrator",
+                "socio"
+            ],
+            "files": [
+                {
+                    "title": "Circular_1_94_Utilizaci\u00f3n_armas",
+                    "file": "Circular_1_94_Utilizaci\u00f3n_armas.pdf"
+                },
+                {
+                    "title": "Escrito_de_Armas",
+                    "file": "Escrito_de_Armas.pdf"
+                }
+            ],
+            "subcategories": [
+                {
+                    "title": "Jurisprudencia",
+                    "permissions": [
+                        "administrator",
+                        "socio"
+                    ],
+                    "files": [
+                        {
+                            "title": "STS_878_2006",
+                            "file": "STS_878_2006.pdf"
+                        },
+                        {
+                            "title": "STS_2084_2019",
+                            "file": "STS_2084_2019.pdf"
+                        },
+                        {
+                            "title": "STS_16_de_Septiembre_de_2009",
+                            "file": "STS_16_de_Septiembre_de_2009.pdf"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "26 C\u00d3DIGOS LEGISLATIVOS ELECTR\u00d3NICOS",
+            "permissions": [
+                "administrator",
+                "socio",
+                "no_socio"
+            ],
+            "files": [
+                {
+                    "title": "Codigo_de_Contratos_del_Sector_Publico",
+                    "file": "Codigo_de_Contratos_del_Sector_Publico.pdf"
+                },
+                {
+                    "title": "Codigo_de_la_Guardia_Civil_-_Marzo_2021",
+                    "file": "Codigo_de_la_Guardia_Civil_-_Marzo_2021.pdf"
+                },
+                {
+                    "title": "Codigo_de_Legislacion_Procesal",
+                    "file": "Codigo_de_Legislacion_Procesal.pdf"
+                },
+                {
+                    "title": "Codigo_de_leyes_administrativas_de_la_Defensa",
+                    "file": "Codigo_de_leyes_administrativas_de_la_Defensa.pdf"
+                },
+                {
+                    "title": "Codigo_Penal_y_legislacion_complementaria",
+                    "file": "Codigo_Penal_y_legislacion_complementaria.pdf"
+                },
+                {
+                    "title": "Codigo_Procesal_Penal",
+                    "file": "Codigo_Procesal_Penal.pdf"
+                }
+            ]
+        },
+        {
+            "title": "27 PERSONAS DESAPARECIDAS (S\u00f3lo para socios de UO)",
+            "permissions": [
+                "administrator",
+                "socio"
+            ],
+            "files": [
+                {
+                    "title": "Gu\u00eda_de_intervenci\u00f3n_policial_con_personas_con_discapacidad_intelectual_126170882",
+                    "file": "Gu\u00eda_de_intervenci\u00f3n_policial_con_personas_con_discapacidad_intelectual_126170882.pdf"
+                },
+                {
+                    "title": "Orientaciones_personal_salud_mental",
+                    "file": "Orientaciones_personal_salud_mental.pdf"
+                },
+                {
+                    "title": "Protocolo_de_Actuaci\u00f3n_FFCCSS_ante_desapariciones",
+                    "file": "Protocolo_de_Actuaci\u00f3n_FFCCSS_ante_desapariciones.pdf"
+                }
+            ]
+        },
+        {
+            "title": "28 JURISPRUDENCIA - (S\u00f3lo para socios de UO)",
+            "permissions": [
+                "administrator",
+                "socio"
+            ],
+            "subcategories": [
+                {
+                    "title": "Delitos contra la Salud P\u00fablica",
+                    "permissions": [
+                        "administrator",
+                        "socio"
+                    ],
+                    "files": [
+                        {
+                            "title": "SJP_Santander_Cultivo_Maria",
+                            "file": "SJP_Santander_Cultivo_Maria.pdf"
+                        }
+                    ]
+                },
+                {
+                    "title": "Intervenciones telef\u00f3nicas, balizas e investigaciones",
+                    "permissions": [
+                        "administrator",
+                        "socio"
+                    ],
+                    "files": [
+                        {
+                            "title": "STS_881_2020",
+                            "file": "STS_881_2020.pdf_DISPOSITIVOS_GPS.pdf"
+                        }
+                    ]
+                },
+                {
+                    "title": "Tr\u00e1fico y Seguridad Vial",
+                    "permissions": [
+                        "administrator",
+                        "socio"
+                    ],
+                    "files": [
+                        {
+                            "title": "SJCA_11_2021",
+                            "file": "SJCA_11_2021.Drogotest_Pontevedra.pdf"
+                        },
+                        {
+                            "title": "STS_Bg_Accidente_Veh_Oficial",
+                            "file": "STS_Bg_Accidente_Veh_Oficial.pdf"
+                        }
+                    ]
+                },
+                {
+                    "title": "Violencia de G\u00e9nero",
+                    "permissions": [
+                        "administrator",
+                        "socio"
+                    ],
+                    "files": [
+                        {
+                            "title": "SAN_2020-10_ACTUAC",
+                            "file": "SAN_2020-10_ACTUAC._GC_VIOGEN.pdf"
+                        }
+                    ]
+                },
+                {
+                    "title": "Varias de Inter\u00e9s",
+                    "permissions": [
+                        "administrator",
+                        "socio"
+                    ],
+                    "files": [
+                        {
+                            "title": "P\u2070_Indemnidad_GC_(Extemporaneidad)",
+                            "file": "P\u2070_Indemnidad_GC_(Extemporaneidad).pdf"
+                        },
+                        {
+                            "title": "STS-1153-2021_Revelacion_de_Secretos_CNP",
+                            "file": "STS-1153-2021_Revelacion_de_Secretos_CNP.pdf"
+                        },
+                        {
+                            "title": "STS_1389_2021-_MASCARILLA_-_DISFRAZ",
+                            "file": "STS_1389_2021-_MASCARILLA_-_DISFRAZ.pdf"
+                        },
+                        {
+                            "title": "STS_ACCESO_DATOS_PERSONALES",
+                            "file": "STS_ACCESO_DATOS_PERSONALES.pdf"
+                        },
+                        {
+                            "title": "sts_cartucho_en_rec\u00e1mara",
+                            "file": "sts_cartucho_en_rec\u00e1mara.pdf"
+                        },
+                        {
+                            "title": "STS_Derecho_a_conocer_investigaci\u00f3n_policial",
+                            "file": "STS_Derecho_a_conocer_investigaci\u00f3n_policial.pdf"
+                        },
+                        {
+                            "title": "STS_ENTRADA_SIN_MANDAMIENTO",
+                            "file": "STS_ENTRADA_SIN_MANDAMIENTO.pdf"
+                        },
+                        {
+                            "title": "STS_LEY_EN_BLANCO_MATERIA_ITV",
+                            "file": "STS_LEY_EN_BLANCO_MATERIA_ITV.pdf"
+                        },
+                        {
+                            "title": "STS_Motivaci\u00f3n_cese_LD",
+                            "file": "STS_Motivaci\u00f3n_cese_LD.pdf"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "29 TR\u00c1FICO Y SEGURIDAD VIAL",
+            "permissions": [
+                "administrator",
+                "socio",
+                "no_socio"
+            ],
+            "subcategories": [
+                {
+                    "title": "\u00d3rdenes Generales y Normativa Complementaria (S\u00f3lo para socios de UO)",
+                    "permissions": [
+                        "administrator",
+                        "socio"
+                    ],
+                    "files": [
+                        {
+                            "title": "2017_S_145_-_Tramitaci\u00f3n_de_Expedientes_Sancionadores_y_Resoluci\u00f3n_de_Recursos_en_materia_de_Seguro",
+                            "file": "2017_S_145_-_Tramitaci\u00f3n_de_Expedientes_Sancionadores_y_Resoluci\u00f3n_de_Recursos_en_materia_de_Seguro.pdf"
+                        },
+                        {
+                            "title": "2018_Competencia_negativa_policia_local_para_las_alcoholemias",
+                            "file": "2018_Competencia_negativa_policia_local_para_las_alcoholemias.pdf"
+                        },
+                        {
+                            "title": "2018_Escrito-Directrices_ante_actuacion_vehiculos_sin_seguro",
+                            "file": "2018_Escrito-Directrices_ante_actuacion_vehiculos_sin_seguro.pdf"
+                        },
+                        {
+                            "title": "2020_Actuacion_con_vehiculos_ligeros_propulsados_motores_electricos",
+                            "file": "2020_Actuacion_con_vehiculos_ligeros_propulsados_motores_electricos.pdf"
+                        },
+                        {
+                            "title": "2021_2_-_Dictamen_de_Fiscalia_de_Seguridad_Vial",
+                            "file": "2021_2_-_Dictamen_de_Fiscalia_de_Seguridad_Vial.pdf"
+                        },
+                        {
+                            "title": "2021__Informe_EMP_sobre_etilometros_y_cinemometros",
+                            "file": "2021__Informe_EMP_sobre_etilometros_y_cinemometros.pdf"
+                        },
+                        {
+                            "title": "2021_Actuacion_con_permisos_de_Conduccion_de_la_UE_y_EEE",
+                            "file": "2021_Actuacion_con_permisos_de_Conduccion_de_la_UE_y_EEE.pdf"
+                        },
+                        {
+                            "title": "DICTAMEN-2",
+                            "file": "DICTAMEN-2.2016-IMPRUDENCIA-GRAVE-Y-MENOS-GRAVE-14-7-2016.pdf"
+                        },
+                        {
+                            "title": "Fiscalia_oficio_policias_judiciales_drogas",
+                            "file": "Fiscalia_oficio_policias_judiciales_drogas.pdf"
+                        },
+                        {
+                            "title": "imprudencia-en-la-conduccion-de-vehiculos-a-motor",
+                            "file": "imprudencia-en-la-conduccion-de-vehiculos-a-motor.pdf"
+                        },
+                        {
+                            "title": "OFICIO_17-03-2021__JEFES_POLIC\u00cdA_LOCAL",
+                            "file": "OFICIO_17-03-2021__JEFES_POLIC\u00cdA_LOCAL.pdf"
+                        },
+                        {
+                            "title": "reconstrucci\u00f3n_de_accidentes",
+                            "file": "reconstrucci\u00f3n_de_accidentes.pdf"
+                        }
+                    ]
+                }
+            ],
+            "files": [
+                {
+                    "title": "TRAFICO",
+                    "file": "TRAFICO.nuevas-normas.pdf"
+                },
+                {
+                    "title": "Parte_amistoso_accidente_editable",
+                    "file": "Parte_amistoso_accidente_editable.pdf"
+                },
+                {
+                    "title": "Impreso-cambio-titularidad-vehiculo-notificacion-venta-Mod",
+                    "file": "Impreso-cambio-titularidad-vehiculo-notificacion-venta-Mod.02-ES.pdf"
+                },
+                {
+                    "title": "Codigo_de_Trafico_y_Seguridad_Vial",
+                    "file": "Codigo_de_Trafico_y_Seguridad_Vial.pdf"
+                }
+            ]
+        }
+    ]
+}

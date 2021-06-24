@@ -1,3 +1,4 @@
+import enum
 from pathlib import Path
 import re
 import logging
@@ -103,9 +104,9 @@ def handle_dragged_file(request):
     filename = request.POST.get('filename')
     json_path = settings.FILE_ROOT + '/data.json'
 
-    if category and subcategory:
+    if category and subcategory and filename:
         destination_path = settings.CATEGORY_ROOT + "/" + category + "/" + subcategory + "/" + filename
-    elif category:
+    elif category and filename:
         destination_path = settings.CATEGORY_ROOT + "/" + category + "/" + filename
     for root, _, files in os.walk(settings.CATEGORY_ROOT):
         if filename in files:
@@ -115,12 +116,12 @@ def handle_dragged_file(request):
             if not file_exists:
                 shutil.move(current_path, destination_path)
                 break
-                
+
     write_dragged_archivo_json(request, json_path, filename)
     return JsonResponse({'message': 'Done'})
 
 def delete_dragged_archivo_json(new_data, filename, current_path, fileName):
-    
+
     with open(filename, 'r+') as file:
         file_data = json.load(file)
         for categories in file_data['categories']:
@@ -153,21 +154,21 @@ def write_dragged_archivo_json(new_data, filename, fileName):
                         if "subcategories" in categories:
                             for subcategories in categories['subcategories']:
                                 if subcategories['title'] == new_data.POST['subcategory']:
-                                    if "files" in subcategories:
+                                    if "files" in subcategories and fileName:
                                         subcategories['files'].append({"title": "{}".format(fileName.split(".")[0]),"file": "{}".format(fileName)})
-                                    else:
+                                    elif fileName:
                                         subcategories.update({"files": []})
                                         subcategories['files'].append({"title": "{}".format(fileName.split(".")[0]),"file": "{}".format(fileName)})
-            
+
         elif 'category' in new_data.POST:
             for categories in file_data['categories']:
                 if categories['title'] == new_data.POST['category']:
-                    if "files" in categories:
+                    if "files" in categories and fileName:
                         categories['files'].append({"title": "{}".format(fileName.split(".")[0]), "file": "{}".format(fileName)})
-                    else:
+                    elif fileName:
                         categories.update({"files": []})
                         categories['files'].append({"title": "{}".format(fileName.split(".")[0]), "file": "{}".format(fileName)})
-        
+
         file.truncate(0)
         file.seek(0)
         json.dump(file_data, file, indent = 4)
@@ -280,7 +281,7 @@ def write_edit_category_json(request, filename):
             if categories['title'] == request.POST['old_title']:
                 file_data['categories'][count-1]['title'] = categories['title'].replace(categories['title'], request.POST['category_title'])
                 file_data['categories'][count-1]['permissions'] = json.loads(request.POST['permissions'])
-        
+
         file.truncate(0)
         file.seek(0)
         json.dump(file_data, file, indent = 4)
@@ -451,7 +452,7 @@ def edit_archivo_json(new_data, filename, fileName):
                                                     'files'][count2+1]['file'] = fileName
                                                 break
 
-        file.truncate(0)                                            
+        file.truncate(0)
         file.seek(0)
         json.dump(file_data, file, indent = 4)
         file.close()
@@ -501,7 +502,7 @@ def edit_archivo_json(new_data, filename, fileName):
                                     file_data['categories'][count - 1]['files'][count2+1]['file'] = fileName
                                     break
 
-        file.truncate(0)                            
+        file.truncate(0)
         file.seek(0)
         json.dump(file_data, file, indent = 4)
         file.close()
@@ -524,7 +525,7 @@ def edit_dragged_archivo_json(new_data, filename, fileName):
                                     file_data['categories'][count - 1]['files'][count2+1]['file'] = fileName
                                     break
 
-        file.truncate(0)                            
+        file.truncate(0)
         file.seek(0)
         json.dump(file_data, file, indent = 4)
         file.close()
@@ -563,7 +564,7 @@ def write_subcategory_json(new_data, filename):
                 else:
                     categories.update({"subcategories": []})
                     categories['subcategories'].append({"title": "{}".format(new_data.POST['subcategory_title']), "permissions":  json.loads(new_data.POST['permissions'])})
-                  
+
         file.seek(0)
         json.dump(file_data, file, indent = 4)
         directory = new_data.POST['subcategory_title']
@@ -610,7 +611,7 @@ def delete_category_json(request, filename):
                         file_data['categories'].pop(count - 1)
                         break
 
-        file.truncate(0)                
+        file.truncate(0)
         file.seek(0)
         json.dump(file_data, file, indent = 4)
         file.close()
@@ -623,7 +624,7 @@ def delete_subcategory(request):
     if request.method == 'POST':
         try:
             path = settings.FILE_ROOT + '/data.json'
-            pathToBeDeleted = settings.CATEGORY_ROOT + '/' + request.POST['category_title'] + '/' + request.POST['subcategory_title'] 
+            pathToBeDeleted = settings.CATEGORY_ROOT + '/' + request.POST['category_title'] + '/' + request.POST['subcategory_title']
             f = open(path,)
             jsonData = json.load(f)
             for categories in jsonData['categories']:
@@ -661,7 +662,7 @@ def delete_subcategory_json(request, filename):
                                     file_data['categories'][count-1]['subcategories'].pop(count1 - 1)
                                     break
 
-        file.truncate(0)                                
+        file.truncate(0)
         file.seek(0)
         json.dump(file_data, file, indent = 4)
         file.close()
@@ -681,7 +682,7 @@ def delete_category_files(request):
             for categories in jsonData['categories']:
                 if categories['title'] == request.POST['category_title']:
                     delete_category_files_json(request, path)
-            
+
             if os.path.exists(deleteFilePath):
                 os.remove(deleteFilePath)
             else:
@@ -732,7 +733,7 @@ def delete_subcategory_files(request):
                 if categories['title'] == request.POST['category_title']:
                     delete_subcategory_files_json(request, path)
             f.close()
-            
+
             if os.path.exists(deleteFilePath):
                 os.remove(deleteFilePath)
             else:
@@ -786,11 +787,11 @@ def get_subcategory_permission(request):
                 for categories in file_data['categories']:
                     count += 1
                     if request.POST['category_title'] == categories['title']:
-                       packet['data'] = file_data['categories'][count-1]['permissions'] 
+                       packet['data'] = file_data['categories'][count-1]['permissions']
                        return JsonResponse(packet)
-        
+
         packet['success'] = 1
-        file.close()        
+        file.close()
         return JsonResponse(packet)
 
 @login_required
@@ -811,9 +812,9 @@ def get_edit_subcategory_permission(request):
                                 packet['data'] = subcategories['permissions']
                                 return JsonResponse(packet)
     packet['success'] = 1
-    file.close()        
+    file.close()
     return JsonResponse(packet)
-        
+
 def data_json(request):
     path = settings.FILE_ROOT + '/data.json'
     with open(path, 'r+') as file:
@@ -845,3 +846,25 @@ def edit_permissions_in_subcategories(request):
     return JsonResponse(packet)
 
     file.close()
+
+
+@login_required
+def categories_order(request):
+    category_title = request.POST.get("category_title")
+    position_at = request.POST.get("position_at")
+
+    path = settings.FILE_ROOT + "/data.json"
+    # file = open(path, "r+", encoding='utf-8')
+    with open(path, "r", encoding="utf-8") as file:
+        jsonData = json.load(file)
+    
+    with open(path, "w", encoding="utf-8") as file:
+        categories = jsonData["categories"]
+        category_current_index = [index for index, value in enumerate(categories) if value["title"] == category_title]
+        category_item = categories[category_current_index[0]]
+        categories.remove(category_item)
+        categories.insert(int(position_at), category_item)
+        newData = {"categories": categories}
+        
+        json.dump(newData, file, indent=4)
+    return JsonResponse({"message": "Done"})

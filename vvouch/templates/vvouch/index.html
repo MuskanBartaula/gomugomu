@@ -17,17 +17,22 @@
               </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
+              <div class="col-md-12">
+                  <a href="#" id="expand_collapse">Contraer</a>
                     <div class="row">
                         <div class="divTable">
                             <div class="divTableBody">
                                 <div class="divTableRow">
                                     <div class="divTableCell cellHeader">S.N</div>
-                                    <div class="divTableCell cellHeader">Estructura</div>
+                                    <div class="divTableCell cellHeader" style="padding-left: 200px;">Estructura</div>
                                     <div class="divTableCell cellHeader">Acción</div>
                                 </div>
-                                
+                              </div>
+                            </div>
+                           
+                            <div class="divTable" id="sortable">
                                 {% for category in categories %}
+                                <div class="divTableBody categories-draggable">
                                     <div class="divTableRow dropable" category="{{ category.title }}">
                                         <div class="divTableCell">{{forloop.counter}}</div>
                                         <div class="divTableCell bold-text">
@@ -43,7 +48,7 @@
                                         </div>
                                     </div>
                                     {% for subcategory in category.subcategories %}
-                                        <div class="divTableRow dropable" category="{{ category.title }}" subcategory="{{ subcategory.title }}">
+                                        <div class="divTableRow dropable submenu" category="{{ category.title }}" subcategory="{{ subcategory.title }}">
                                             <div class="divTableCell padding-left">
 
                                             </div>
@@ -60,7 +65,7 @@
                                             </div>
                                         </div>
                                         {% for file in subcategory.files %}
-                                            <div class="divTableRow dragable" file_name="{{ file.file}}">
+                                            <div class="divTableRow dragable submenu" file_name="{{ file.file}}">
                                                 <div class="divTableCell padding-left100">
 
                                                 </div>
@@ -77,7 +82,7 @@
                                         {% endfor %}
                                     {% endfor %}
                                     {% for file in category.files %}
-                                        <div class="divTableRow dragable" file_name="{{ file.file}}">
+                                        <div class="divTableRow dragable submenu" file_name="{{ file.file}}">
                                             <div class="divTableCell">
                                             </div>
                                             <div class="divTableCell cat-files-name">
@@ -91,8 +96,8 @@
                                             </div>
                                         </div>
                                     {% endfor %}
+                                  </div>
                                 {% endfor %}
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -182,7 +187,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="modal fade" id="archivoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">

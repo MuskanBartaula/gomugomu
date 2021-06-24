@@ -46,14 +46,14 @@ $(document).ready(function () {
                 $(".subCategory-permission-select").empty();
                 for(var key in data['data']) {
                     let permissionData = data['data'][key]
-                    $(".subCategory-permission-select").append('<option value="' + permissionData + '">' + permissionData + '</option>')        
-                    
+                    $(".subCategory-permission-select").append('<option value="' + permissionData + '">' + permissionData + '</option>')
+
                     $(".subCategory-permission-select > option").each(function() {
                         $(this).prop("selected",true);
                     });
                 }
-            });      
-    }); 
+            });
+    });
 
     $("#subCat_Edit").change(function(e) {
 
@@ -71,7 +71,7 @@ $(document).ready(function () {
             $(".edit-sub-permission-select").empty();
             for(var key in data['data']) {
                 let permissionData = data['data'][key];
-                $(".edit-sub-permission-select").append('<option value="' + permissionData + '">' + permissionData + '</option>');        
+                $(".edit-sub-permission-select").append('<option value="' + permissionData + '">' + permissionData + '</option>');
             }
         });
 
@@ -89,7 +89,7 @@ $(document).ready(function () {
     //     }).done(function (data) {
     //         for(var key in data['data']) {
     //             let permissionData = data['data'][key]
-            
+
     //             $(".edit-sub-permission-select > option").each(function () {
     //                 if ($(this).val() === permissionData) {
     //                     console.log("Worked!");
@@ -97,12 +97,12 @@ $(document).ready(function () {
     //                 }
     //             });
 
-            
+
     //             $(".edit-sub-permission-select").trigger("change");
     //         }
     //     });
 
-    // }); 
+    // });
 
     $.ajax({
         type: "GET",
@@ -162,7 +162,7 @@ $(document).ready(function () {
         } else if ($(".category-select").val() == "" || $(".category-select").val() == null) {
             swal("Oops", "Seleccione una categoría..!", "error");
         } else if($('.subCategory-permission-select').val() == null) {
-            swal("Oops", "Seleccione los permisos..!", "error");          
+            swal("Oops", "Seleccione los permisos..!", "error");
         } else {
             all_ok = true;
         }
@@ -202,12 +202,12 @@ $(document).ready(function () {
         if(e.lengthComputable){
             var max = e.total;
             var current = e.loaded;
-    
+
             var percent = parseInt((current * 100)/max);
             $('#progressBar').attr('aria-valuenow', percent).css('width', percent + '%').text(percent + '%');
-        }  
+        }
      }
-     
+
     $("#archivo-form").on("submit", function (evt) {
         evt.preventDefault();
         var all_ok = false;
@@ -225,12 +225,12 @@ $(document).ready(function () {
 
                     var xhr = new XMLHttpRequest()
                     xhr.upload.addEventListener("progress", progress, false)
-                    
+
                     xhr.open("POST", postRoute)
                     xhr.setRequestHeader("Content-Type","multipart/form-data");
                     xhr.send(formData)
 
-                   
+
 
                     $.ajax({
                         xhr: function(){
@@ -278,7 +278,7 @@ $(document).ready(function () {
                                 });
                         }
 
-                    });       
+                    });
                 } else {
                     swal("Oops","No hay archivos adjuntados","error")
                 }
@@ -421,7 +421,7 @@ $(document).ready(function () {
             },
         }).done(function (data) {
             console.log("Adding recv data");
-            
+
             for(var key in data['data']) {
                 let permissionData = data['data'][key]
                 console.log(permissionData);
@@ -716,9 +716,31 @@ $(document).ready(function () {
     });
 });
 var category;
-    var subcategory;
+var subcategory;
+$( function () {
+  $('#sortable').sortable({
+    items: "> .categories-draggable",
+    update: function(event, ui) {
+        var positionAt = ui.item.index();
+        var categoryTitle = ui.item[0].firstElementChild.getAttribute('category');
+        console.log(positionAt)
+        $.ajax({
+          url: '/categories/order/',
+          method: 'POST',
+          data: {
+              'category_title': categoryTitle,
+              'position_at': positionAt,
+              'csrfmiddlewaretoken': $(".csrfToken").val()
+          },
+          success: function(data) {
+          }
+
+      })
+    }
+  });
+})
 $( function() {
-    
+
     $('.dragable').draggable({
         revert: 'invalid'
     })
@@ -728,21 +750,37 @@ $( function() {
             category = $(this).attr('category')
             subcategory = $(this).attr('subcategory')
             filename = $(ui.draggable).attr('file_name')
-            
-            $.ajax({
-                url: '/file/move/',
-                method: 'POST',
-                data: {
-                    category: category,
-                    subcategory: subcategory,
-                    filename: filename,
-                    csrfmiddlewaretoken: $(".csrfToken").val(),
-                },
-                success: function(data) {
-                    location.reload()
-                }
 
-            })
+            if (filename) {
+                $.ajax({
+                    url: '/file/move/',
+                    method: 'POST',
+                    data: {
+                        category: category,
+                        subcategory: subcategory,
+                        filename: filename,
+                        csrfmiddlewaretoken: $(".csrfToken").val(),
+                    },
+                    success: function(data) {
+                        location.reload()
+                    }
+                })
+            }
         },
     });
 });
+
+$(function() {
+
+    $('#expand_collapse').on('click', function(e) {
+        if($(".submenu").css('display') == 'none') {
+            $("#expand-collapse").html("Collapse All");
+            $(".submenu").show("slow");
+            $('#expand_collapse').text("Contraer")
+        } else {
+            $("#expand-collapse").html("Expand All");
+            $(".submenu").hide("slow");
+            $('#expand_collapse').text("Expander")
+        }
+    });
+})

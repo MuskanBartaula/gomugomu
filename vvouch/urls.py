@@ -4,7 +4,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.urls import path
 from . import views
 
-urlpatterns = [ 
+urlpatterns = [
     path('', views.index, name='index'),
     path('add-category', views.add_category, name='add-category'),
     path('add-subcategory', views.add_subcategory, name='add-subcategory'),
@@ -23,7 +23,8 @@ urlpatterns = [
     path('edit_permissions_in_subcategories', views.edit_permissions_in_subcategories, name='edit_permissions_in_subcategories'),
     path('data-json',views.data_json, name="data-json"),
 
-    path('file/move/', views.handle_dragged_file, name="handle_dragged_file")
+    path('file/move/', views.handle_dragged_file, name="handle_dragged_file"),
+    path('categories/order/', views.categories_order, name="categories_order"),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
