@@ -260,7 +260,7 @@ $(document).ready(function () {
                             console.log(data);
                             $('.create-archivo').removeAttr('disabled').text('Crear')
                             if (data.success == 1) {
-                                swal("Éxito!", "Imágenes subidas con éxito!", "success")
+                                swal("Éxito!", "Archivo subido con éxito!", "success")
                                     .then((value) => {
                                         location.reload();
                                     });
@@ -272,7 +272,7 @@ $(document).ready(function () {
                         },
                         error: function (data) {
                             $('.create-archivo').removeAttr('disabled').text('Crear')
-                            swal("Éxito!", "Imágenes subidas con éxito!", "success")
+                            swal("Éxito!", "Archivo subido con éxito!", "success")
                                 .then((value) => {
                                     location.reload();
                                 });

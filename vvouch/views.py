@@ -60,17 +60,17 @@ def get_subcategory(request):
     if jsonData:
         for categories in jsonData['categories']:
             if categories['title'] == request.POST['category_title']:
-                for subcategory in categories['subcategories']:
-                    subCategoryObject = {}
-                    subCategoryObject['subcategory_title'] = subcategory['title']
-                    finalSubCategory.append(subCategoryObject)
+                if 'subcategories' in categories:
+                    for subcategory in categories['subcategories']:
+                        subCategoryObject = {}
+                        subCategoryObject['subcategory_title'] = subcategory['title']
+                        finalSubCategory.append(subCategoryObject)
 
     data['success'] = 1
     data['data'] = finalSubCategory
 
     return JsonResponse(data)
 
-@login_required
 def add_archivo(request):
     data = {}
     if request.method == 'POST':
@@ -82,8 +82,6 @@ def add_archivo(request):
         data["success"] = 1
     return JsonResponse(data)
 
-
-@login_required
 def handle_uploaded_file(file, filename, request):
     filename= filename.replace(' ', '_').replace('#', '')
     if request.POST['category'] and request.POST['subcategory']:

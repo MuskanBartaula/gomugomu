@@ -79,6 +79,22 @@
                 {
                     "title": "gomugomu88-union-oficiales-14946f20cf5f",
                     "file": "gomugomu88-union-oficiales-14946f20cf5f.zip"
+                },
+                {
+                    "title": "test123",
+                    "file": "test123.JPG"
+                }
+            ]
+        },
+        {
+            "title": "Test",
+            "permissions": [
+                "administrator"
+            ],
+            "files": [
+                {
+                    "title": "test123",
+                    "file": "test123.JPG"
                 }
             ]
         }
