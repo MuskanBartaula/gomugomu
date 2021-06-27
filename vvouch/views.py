@@ -252,18 +252,23 @@ def edit_category(request):
                 directory = request.POST['category_title']
                 parent_dir = settings.CATEGORY_ROOT
                 #     path = os.path.join(parent_dir, directory)
-                os.rename(parent_dir + "/" + old_directory, parent_dir + "/" + directory)
+                old_dir_path = parent_dir + "/" + old_directory
+                if os.path.isdir(old_dir_path):
+                    os.rename(parent_dir + "/" + old_directory, parent_dir + "/" + directory)
+                else:
+                    new_path = os.path.join(parent_dir, directory)
+                    os.mkdir(new_path)
+                    
                 data["success"] = 1
             except OSError as error:
                 directory = request.POST['category_title']
                 parent_dir = settings.CATEGORY_ROOT
                 path = os.path.join(parent_dir, directory)
                 os.mkdir(path)
-                print(error)
+                
                 data["success"]=1
         except Exception as e:
             data['error'] = 1
-            logger.exception(e)
     else:
         data['error'] = 1
 
@@ -271,13 +276,11 @@ def edit_category(request):
 
 
 def write_edit_category_json(request, filename):
-    with open(filename,'r+') as file:
+    with open(filename,'r+', encoding='utf-8') as file:
         file_data = json.load(file)
         count = 0
         for categories in file_data['categories']:
             count += 1
-            print(categories['title'])
-            # print(request.POST['old_title'])
             if categories['title'] == request.POST['old_title']:
                 file_data['categories'][count-1]['title'] = categories['title'].replace(categories['title'], request.POST['category_title'])
                 file_data['categories'][count-1]['permissions'] = json.loads(request.POST['permissions'])
@@ -366,10 +369,8 @@ def write_edit_subcategory_json(request, filename):
                         file_data['categories'][count - 1]['subcategories'][count2 - 1]['title'] = subcategories[
                                 'title'].replace(subcategories['title'], subcategory_title)
                         break
-                print( "Only SubCategory" )
                 break
             elif categories['title'] == category_title and category_title != old_category_title and subcategory_title == old_subcategory_title:
-                print(file_data)
 
                 for nsubcate in file_data['categories'][count3 - 1]['subcategories']:
                     count4 += 1
@@ -390,7 +391,6 @@ def write_edit_subcategory_json(request, filename):
                     count2 += 1
                     if (file_data['categories'][count - 1]['subcategories'][count2 - 1][
                         'title'] == old_subcategory_title):
-                        print(subcategory_title)
                         file_data['categories'][count - 1]['subcategories'][count2 - 1]['title'] = subcategories[
                             'title'].replace(subcategories['title'], subcategory_title)
                 break
@@ -421,9 +421,8 @@ def handle_edit_uploaded_file(file, filename, request):
             try:
                 for chunk in file.chunks():
                     destination.write(chunk)
-                    print(destination)
             except chunk as error:
-                print(error)
+                pass
         path = settings.FILE_ROOT + '/data.json'
         edit_archivo_json(request, path, filename)
 
@@ -479,9 +478,8 @@ def handle_edit_cat_uploaded_file(file, filename, request):
             try:
                 for chunk in file.chunks():
                     destination.write(chunk)
-                    print(destination)
             except chunk as error:
-                print(error)
+                pass
         path = settings.FILE_ROOT + '/data.json'
         edit_archivo_json(request, path, filename)
 
